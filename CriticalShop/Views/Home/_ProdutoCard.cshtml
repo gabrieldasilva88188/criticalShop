@@ -1,0 +1,15 @@
+@model CriticalShop.Models.Produto
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="@Model.Img" alt="@Model.Nome">
+    </div>
+    <div class="product-info">
+        <h3>@Model.Nome</h3>
+        <span class="product-category">@Model.Categoria?.Nome</span>
+        <span class="product-price">@Model.Preco.ToString("C")</span>
+        <button class="add-to-cart" data-id="@Model.Id">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+

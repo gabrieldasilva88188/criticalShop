@@ -1,0 +1,166 @@
+/* ----------------- HEADER TOP ----------------- */
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Pesquisa */
+.search-bar {
+  display: flex;
+  max-width: 300px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff7315;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar .search-btn {
+  background: #ff7315;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #232020;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar .search-btn:hover {
+  background: #ff914d;
+}
+
+/* Centralizar logo */
+.logo {
+  text-align: center;
+}
+
+/* User Actions (Login + Carrinho) */
+.user-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+/* ----------------- MENU ----------------- */
+.main-nav {
+    background: linear-gradient(90deg, #232020 0%, #3A3535 100%);
+    padding: 0.8rem 0;
+    border-bottom: 2px solid #FF7315;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #FF7315, transparent);
+}
+
+.nav-menu li:last-child::after {
+    display: none;
+}
+
+.nav-menu a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    display: block;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    color: #FF7315;
+    background: rgba(255, 115, 21, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .nav-menu {
+        width: 80%;
+    }
+    
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .nav-menu li {
+        flex: none;
+        width: calc(50% - 0.5rem);
+    }
+    
+    .nav-menu li::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+    
+    .user-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+

@@ -1,0 +1,434 @@
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', 'Georgia', serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #232020; /* Fundo escuro para evitar bordas brancas */
+}
+
+body {
+    background-color: #F4F4F4;
+    color: #3A3535;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----------------- HEADER TOP ----------------- */
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 0;
+    background: #232020;
+    width: 100%;
+}
+
+/* Garantir que o header principal ocupe toda a largura */
+.main-header {
+    background-color: #232020;
+    width: 100%;
+    padding: 0;
+    border-bottom: 2px solid #FF7315;
+}
+
+/* Pesquisa */
+.search-bar {
+    display: flex;
+    max-width: 300px;
+    margin-left: 1rem; /* Adiciona espaçamento da borda */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid #FF7315;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background: #3A3535;
+    color: #F4F4F4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.search-bar input::placeholder {
+    color: #A0A0A0;
+}
+
+.search-bar .search-btn {
+    background: #FF7315;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #232020;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar .search-btn:hover {
+    background: #FF914D;
+}
+
+/* Centralizar logo */
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    color: #FF7315;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.logo p {
+    color: #F4F4F4;
+    margin: 0;
+    font-style: italic;
+}
+
+/* User Actions (Login + Carrinho) */
+.user-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem; /* Adiciona espaçamento da borda */
+}
+
+.user-actions .login-btn {
+    color: #F4F4F4;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid #FF7315;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.user-actions .login-btn:hover {
+    background: #FF7315;
+    color: #232020;
+}
+
+.user-actions .cart-btn {
+    background-color: #FF7315;
+    color: #232020;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.user-actions .cart-btn:hover {
+    background-color: #FF914D;
+    transform: translateY(-2px);
+}
+
+/* ----------------- MENU PRINCIPAL ----------------- */
+.main-nav {
+    background: linear-gradient(90deg, #232020 0%, #3A3535 100%);
+    padding: 0.8rem 0;
+    border-bottom: 2px solid #FF7315;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #FF7315, transparent);
+}
+
+.nav-menu li:last-child::after {
+    display: none;
+}
+
+.nav-menu a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    display: block;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.nav-menu a:hover {
+    color: #FF7315;
+    background: rgba(255, 115, 21, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Hero Section com Imagem de Fundo */
+.hero-section {
+    background: linear-gradient(rgba(35, 32, 32, 0.7), rgba(35, 32, 32, 0.7)), url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: #F4F4F4;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #FF7315;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito parallax (opcional) */
+@media (min-width: 992px) {
+    .hero-section {
+        background-attachment: fixed;
+    }
+}
+
+/* Produtos */
+.featured-products {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #232020;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #FF7315;
+    margin: 0.5rem auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Product Card */
+.product-card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 115, 21, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h3 {
+    color: #232020;
+    margin-bottom: 0.5rem;
+}
+
+.product-category {
+    display: block;
+    color: #5a5a5a;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FF7315;
+}
+
+.add-to-cart {
+    background-color: #232020;
+    color: #F4F4F4;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #FF7315;
+    color: #232020;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #232020;
+    color: #F4F4F4;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #FF7315;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #F4F4F4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #FF7315;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-top {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .search-bar {
+        max-width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .user-actions {
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .nav-menu li {
+        flex: none;
+        width: 50%;
+    }
+    
+    .nav-menu li::after {
+        display: none;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .user-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+/* _content/CriticalShop/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-ks2c1doywm] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-ks2c1doywm] {
+  color: #0077cc;
+}
+
+.btn-primary[b-ks2c1doywm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ks2c1doywm], .nav-pills .show > .nav-link[b-ks2c1doywm] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ks2c1doywm] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ks2c1doywm] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ks2c1doywm] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ks2c1doywm] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ks2c1doywm] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

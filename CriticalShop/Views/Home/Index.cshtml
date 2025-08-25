@@ -1,0 +1,78 @@
+﻿@model IEnumerable<CriticalShop.Models.Produto>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Shop</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/site.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/header.css")">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container header-top">
+    
+        <!-- Pesquisa -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar itens mágicos..." />
+            <button type="submit" class="search-btn">🔍</button>
+        </div>
+
+            <!-- Logo -->
+        <div class="logo">
+            <h1>Critical Shop</h1>
+            <p>Itens épicos para suas aventuras</p>
+        </div>
+
+
+        <!-- Login / Cadastro -->
+        <div class="user-actions">
+            <a href="#" class="login-btn">🛡️ Login</a>
+            <a href="#" class="cart-btn">🎒 <span class="cart-count">0</span></a>
+        </div>
+    </div>
+
+    <!-- Menu Navegação -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#">🏠 Início</a></li>
+                <li><a href="#">📚 Livros</a></li>
+                <li><a href="#">🎲 Dados</a></li>
+                <li><a href="#">⚔️ Miniaturas</a></li>
+                <li><a href="#">🗺️ Acessórios</a></li>
+                <li><a href="#">⭐ Destaques</a></li>
+                <li><a href="#">📜 Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Bem-vindo à sua loja de RPG!</h2>
+            <p>Encontre os melhores itens para suas campanhas e aventuras épicas.</p>
+            <a href="#" class="cta-btn">Explorar Itens</a>
+        </div>
+    </div>
+</section>
+
+<!-- Produtos -->
+<section class="featured-products">
+    <div class="container">
+        <h2 class="section-title">Destaques</h2>
+        <div class="product-grid">
+            @foreach (var Produto in Model)
+            {
+                <partial name="_ProdutoCard" model="Produto" />
+            }
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
