@@ -2,7 +2,17 @@
 
 <div class="product-card">
     <div class="product-image">
-        <img src="@Model.Img" alt="@Model.Nome">
+        @if (!string.IsNullOrEmpty(Model.Img))
+        {
+            <img src="@Model.Img" alt="@Model.Nome">
+        }
+        else
+        {
+            <div class="no-image">
+                <i class="fas fa-image"></i>
+                <span>Sem imagem</span>
+            </div>
+        }
     </div>
     <div class="product-info">
         <h3>@Model.Nome</h3>

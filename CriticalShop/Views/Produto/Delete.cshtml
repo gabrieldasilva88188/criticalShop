@@ -1,0 +1,113 @@
+@model CriticalShop.Models.Produto
+
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-exclamation-triangle"></i> Confirmar Exclusão
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <h5 class="alert-heading">
+                            <i class="fas fa-exclamation-triangle"></i> Atenção!
+                        </h5>
+                        <p class="mb-0">Você está prestes a excluir o produto "<strong>@Model.Nome</strong>". Esta ação não pode ser desfeita.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (!string.IsNullOrEmpty(Model.Img))
+                            {
+                                <img src="@Model.Img" alt="@Model.Nome" class="img-fluid rounded" style="max-height: 200px; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded" style="height: 200px;">
+                                    <div class="text-center">
+                                        <i class="fas fa-image fa-2x mb-2"></i>
+                                        <p>Sem imagem</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <dl class="row">
+                                <dt class="col-sm-4">ID:</dt>
+                                <dd class="col-sm-8">@Model.Id</dd>
+
+                                <dt class="col-sm-4">Nome:</dt>
+                                <dd class="col-sm-8">@Model.Nome</dd>
+
+                                <dt class="col-sm-4">Preço:</dt>
+                                <dd class="col-sm-8">@Model.Preco.ToString("C")</dd>
+
+                                <dt class="col-sm-4">Categoria:</dt>
+                                <dd class="col-sm-8">
+                                    @if (Model.Categoria != null)
+                                    {
+                                        <span class="badge bg-primary">@Model.Categoria.Nome</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Sem categoria</span>
+                                    }
+                                </dd>
+
+                                <dt class="col-sm-4">Nota:</dt>
+                                <dd class="col-sm-8">
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-warning me-2">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= Model.Nota)
+                                                {
+                                                    <i class="fas fa-star"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="far fa-star"></i>
+                                                }
+                                            }
+                                        </span>
+                                        <span>@Model.Nota.ToString("F1")/5.0</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h6>Impacto da Exclusão:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-times-circle text-danger"></i> @Model.Variacoes.Count variações serão removidas</li>
+                            <li><i class="fas fa-times-circle text-danger"></i> @Model.Avaliacoes.Count avaliações serão removidas</li>
+                        </ul>
+                    </div>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash"></i> Confirmar Exclusão
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+}

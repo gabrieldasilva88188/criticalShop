@@ -3,6 +3,7 @@ using System;
 using CriticalShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CriticalShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250825201724_CRUDProduto")]
+    partial class CRUDProduto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.8");
@@ -92,8 +95,8 @@ namespace CriticalShop.Migrations
                     b.Property<int?>("DescontoId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Img")
-                        .HasColumnType("TEXT");
+                    b.Property<byte[]>("ImagemBytes")
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -105,6 +108,10 @@ namespace CriticalShop.Migrations
 
                     b.Property<double>("Preco")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("TipoImagem")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

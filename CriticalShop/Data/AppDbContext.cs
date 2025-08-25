@@ -21,31 +21,63 @@ namespace CriticalShop.Data
             modelBuilder.Entity<Categoria>()
                 .HasOne(c => c.Parent)
                 .WithMany(c => c.SubCategorias)
-                .HasForeignKey(c => c.ParentId);
+                .HasForeignKey(c => c.ParentId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Relacionamento Produto - Categoria
             modelBuilder.Entity<Produto>()
                 .HasOne(p => p.Categoria)
                 .WithMany(c => c.Produtos)
-                .HasForeignKey(p => p.CategoriaId);
+                .HasForeignKey(p => p.CategoriaId)
+                .OnDelete(DeleteBehavior.Restrict);
 
-            // Relacionamento Produto - Variacao
+            // Relacionamento Produto - Desconto
+            modelBuilder.Entity<Produto>()
+                .HasOne(p => p.Desconto)
+                .WithMany()
+                .HasForeignKey(p => p.DescontoId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            // Relacionamento Produto - Variacao (Cascade Delete)
             modelBuilder.Entity<Variacao>()
                 .HasOne(v => v.Produto)
                 .WithMany(p => p.Variacoes)
-                .HasForeignKey(v => v.ProdutoId);
+                .HasForeignKey(v => v.ProdutoId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            // Relacionamento Avaliação - Produto
+            // Relacionamento Avaliação - Produto (Cascade Delete)
             modelBuilder.Entity<Avaliacao>()
                 .HasOne(a => a.Produto)
                 .WithMany(p => p.Avaliacoes)
-                .HasForeignKey(a => a.ProdutoId);
+                .HasForeignKey(a => a.ProdutoId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             // Relacionamento Avaliação - Usuario
             modelBuilder.Entity<Avaliacao>()
                 .HasOne(a => a.Usuario)
                 .WithMany()
-                .HasForeignKey(a => a.UserId);
+                .HasForeignKey(a => a.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Configurações adicionais para Produto
+            modelBuilder.Entity<Produto>()
+                .Property(p => p.Nome)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Produto>()
+                .Property(p => p.Preco)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Produto>()
+                .Property(p => p.Nota)
+                .HasColumnType("decimal(3,1)");
+
+            // Configurações para Categoria
+            modelBuilder.Entity<Categoria>()
+                .Property(c => c.Nome)
+                .IsRequired()
+                .HasMaxLength(50);
 
             base.OnModelCreating(modelBuilder);
         }

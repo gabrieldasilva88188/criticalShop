@@ -1,0 +1,140 @@
+@model CriticalShop.Models.Produto
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title mb-0">
+                        <i class="fas fa-info-circle"></i> Detalhes do Produto
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (!string.IsNullOrEmpty(Model.Img))
+                            {
+                                <img src="@Model.Img" alt="@Model.Nome" class="img-fluid rounded" style="max-height: 300px; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded" style="height: 300px;">
+                                    <div class="text-center">
+                                        <i class="fas fa-image fa-3x mb-3"></i>
+                                        <p>Sem imagem</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <dl class="row">
+                                <dt class="col-sm-4">ID:</dt>
+                                <dd class="col-sm-8">@Model.Id</dd>
+
+                                <dt class="col-sm-4">Nome:</dt>
+                                <dd class="col-sm-8">@Model.Nome</dd>
+
+                                <dt class="col-sm-4">Preço:</dt>
+                                <dd class="col-sm-8">
+                                    <span class="h5 text-success">@Model.Preco.ToString("C")</span>
+                                </dd>
+
+                                <dt class="col-sm-4">Categoria:</dt>
+                                <dd class="col-sm-8">
+                                    @if (Model.Categoria != null)
+                                    {
+                                        <span class="badge bg-primary">@Model.Categoria.Nome</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Sem categoria</span>
+                                    }
+                                </dd>
+
+                                <dt class="col-sm-4">Nota:</dt>
+                                <dd class="col-sm-8">
+                                    <div class="d-flex align-items-center">
+                                        <span class="text-warning me-2">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= Model.Nota)
+                                                {
+                                                    <i class="fas fa-star"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="far fa-star"></i>
+                                                }
+                                            }
+                                        </span>
+                                        <span class="h6">@Model.Nota.ToString("F1")/5.0</span>
+                                    </div>
+                                </dd>
+
+                                @if (Model.Desconto != null)
+                                {
+                                    <dt class="col-sm-4">Desconto:</dt>
+                                    <dd class="col-sm-8">
+                                        <span class="badge bg-danger">@Model.Desconto.Valor% OFF</span>
+                                    </dd>
+                                }
+
+                                <dt class="col-sm-4">URL da Imagem:</dt>
+                                <dd class="col-sm-8">
+                                    @if (!string.IsNullOrEmpty(Model.Img))
+                                    {
+                                        <span class="text-break">@Model.Img</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Não definida</span>
+                                    }
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5>Estatísticas</h5>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-primary">@Model.Variacoes.Count</div>
+                                    <small class="text-muted">Variações</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <div class="h4 text-success">@Model.Avaliacoes.Count</div>
+                                    <small class="text-muted">Avaliações</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Voltar à Lista
+                        </a>
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                                <i class="fas fa-edit"></i> Editar
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">
+                                <i class="fas fa-trash"></i> Excluir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+}

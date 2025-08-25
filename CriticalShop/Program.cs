@@ -47,11 +47,12 @@ app.UseRouting();
 // app.UseAuthentication();
 app.UseAuthorization();
 
-// (Opcional em DEV) aplica migrations automaticamente
+// (Opcional em DEV) aplica migrations automaticamente e executa seeder
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
+    DbSeeder.SeedData(db);
 }
 
 // Rotas MVC

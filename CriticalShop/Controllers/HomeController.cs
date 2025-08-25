@@ -18,9 +18,9 @@ public class HomeController : Controller
     {
         var produtos = new List<Produto>
         {
-            new Produto { Id = 1, Nome = "Dados Poliédricos", Preco = 49.90, Img = "../images/guiaCoc.png" },
-            new Produto { Id = 2, Nome = "Manual do Jogador", Preco = 99.90, Img = "/images/phb.jpg" },
-            new Produto { Id = 3, Nome = "Miniatura Dragão", Preco = 79.90, Img = "/images/dragon-mini.jpg" }
+            new Produto { Id = 1, Nome = "Dados Poliédricos", Preco = 49.90, Nota = 4.5, CategoriaId = 1 },
+            new Produto { Id = 2, Nome = "Manual do Jogador", Preco = 99.90, Nota = 4.8, CategoriaId = 1 },
+            new Produto { Id = 3, Nome = "Miniatura Dragão", Preco = 79.90, Nota = 4.2, CategoriaId = 2 }
         };
 
         return View(produtos);
