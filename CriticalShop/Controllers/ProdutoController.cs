@@ -114,7 +114,7 @@ namespace CriticalShop.Controllers
                         return View(produto);
                     }
 
-                    // Validação adicional para desconto (se fornecido)
+                    // Aplica desconto ao preço, se houver
                     if (produto.DescontoId.HasValue)
                     {
                         var desconto = await _context.Descontos.FindAsync(produto.DescontoId.Value);
@@ -125,8 +125,8 @@ namespace CriticalShop.Controllers
                             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
                             return View(produto);
                         }
+                        produto.Preco = produto.Preco * (1 - desconto.Valor / 100.0);
                     }
-
                     _context.Add(produto);
                     await _context.SaveChangesAsync();
                     TempData["SuccessMessage"] = "Produto criado com sucesso!";
@@ -206,7 +206,7 @@ namespace CriticalShop.Controllers
                         return View(produto);
                     }
 
-                    // Validação adicional para desconto (se fornecido)
+                    // Aplica desconto ao preço, se houver
                     if (produto.DescontoId.HasValue)
                     {
                         var desconto = await _context.Descontos.FindAsync(produto.DescontoId.Value);
@@ -217,8 +217,8 @@ namespace CriticalShop.Controllers
                             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
                             return View(produto);
                         }
+                        produto.Preco = produto.Preco * (1 - desconto.Valor / 100.0);
                     }
-
                     _context.Update(produto);
                     await _context.SaveChangesAsync();
                     TempData["SuccessMessage"] = "Produto atualizado com sucesso!";

@@ -69,9 +69,6 @@ namespace CriticalShop.Data
                 .Property(p => p.Preco)
                 .HasColumnType("decimal(18,2)");
 
-            modelBuilder.Entity<Produto>()
-                .Property(p => p.Nota)
-                .HasColumnType("decimal(3,1)");
 
             // Configurações para Categoria
             modelBuilder.Entity<Categoria>()

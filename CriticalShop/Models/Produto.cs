@@ -20,10 +20,6 @@ namespace CriticalShop.Models
         [Display(Name = "Imagem do Produto")]
         public string? Img { get; set; }
         
-        [Required(ErrorMessage = "A nota é obrigatória")]
-        [Range(1, 5, ErrorMessage = "A nota deve estar entre 1 e 5")]
-        [Display(Name = "Nota")]
-        public double Nota { get; set; }
 
         // Relacionamentos
         [Required(ErrorMessage = "A categoria é obrigatória")]

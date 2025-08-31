@@ -55,25 +55,6 @@
                                     }
                                 </dd>
 
-                                <dt class="col-sm-4">Nota:</dt>
-                                <dd class="col-sm-8">
-                                    <div class="d-flex align-items-center">
-                                        <span class="text-warning me-2">
-                                            @for (int i = 1; i <= 5; i++)
-                                            {
-                                                if (i <= Model.Nota)
-                                                {
-                                                    <i class="fas fa-star"></i>
-                                                }
-                                                else
-                                                {
-                                                    <i class="far fa-star"></i>
-                                                }
-                                            }
-                                        </span>
-                                        <span class="h6">@Model.Nota.ToString("F1")/5.0</span>
-                                    </div>
-                                </dd>
 
                                 @if (Model.Desconto != null)
                                 {
