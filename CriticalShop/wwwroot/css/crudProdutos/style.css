@@ -139,11 +139,60 @@
 }
 
 /* Botões de ação maiores */
+/* Container de botões em cada linha da tabela */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Espaço entre os botões */
+}
+
+/* Estilo base para todos os botões de ação */
 .btn-group .btn {
     border-radius: 8px;
     padding: 0.6rem 1rem;
     font-size: 1rem;
-    margin: 0 0.2rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para profundidade */
+    transform: translateY(0); /* Posição inicial para a transição */
+}
+
+.btn-group .btn:hover {
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+/* Botão "Detalhes" - Azul */
+.btn-info {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+    color: #FFFFFF;
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #138496 0%, #0c5460 100%);
+}
+
+/* Botão "Editar" - Laranja (igual ao tema principal) */
+.btn-warning {
+    background: linear-gradient(135deg, #FF7315 0%, #E56712 100%);
+    color: #232020;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #E56712 0%, #CC5B10 100%);
+}
+
+/* Botão "Excluir" - Vermelho */
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: #FFFFFF;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #c82333 0%, #a71d2a 100%);
 }
 
 /* Estado vazio em tela cheia */
@@ -175,6 +224,7 @@
 }
 
 /* Botão Novo Produto em destaque */
+/* Botão "Novo Produto" em destaque */
 .btn-primary {
     background: linear-gradient(135deg, #FF7315 0%, #E56712 100%);
     color: #232020;
@@ -184,14 +234,15 @@
     font-weight: 600;
     border: none;
     border-radius: 8px;
-
-    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
     background: linear-gradient(135deg, #E56712 0%, #CC5B10 100%);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 115, 21, 0.5);
+    color: #232020;
 }
 
 /* Imagens maiores */

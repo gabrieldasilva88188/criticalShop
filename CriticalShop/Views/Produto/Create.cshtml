@@ -41,7 +41,7 @@
                                         <span asp-validation-for="Nome" class="text-danger"></span>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 preco-input">
                                     <div class="mb-3">
                                         <label asp-for="Preco" class="form-label">Preço</label>
                                         <div class="input-group">
@@ -58,10 +58,10 @@
                                     <div class="mb-3">
                                         <label asp-for="CategoriaId" class="form-label">Categoria</label>
                                         <select asp-for="CategoriaId" class="form-select">
-                                            <option value="">Selecione uma categoria</option>
+                                            <option value="">Selecione uma categoria </option>
                                             @foreach (var categoria in ViewBag.Categorias)
                                             {
-                                                <option value="@categoria.Id">@categoria.Nome</option>
+                                                <option value="@categoria.Id">@categoria.Nome </option>
                                             }
                                         </select>
                                         <span asp-validation-for="CategoriaId" class="text-danger"></span>
