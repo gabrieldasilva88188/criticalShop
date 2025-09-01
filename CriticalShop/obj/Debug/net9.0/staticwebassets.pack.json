@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\style.css",
+      "PackagePath": "staticwebassets\\css\\crudProdutos\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
     },

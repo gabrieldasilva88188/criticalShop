@@ -435,3 +435,4 @@ C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\refint\Criti
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.pdb
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\ref\CriticalShop.dll
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\jqiecebxh7-ynftpv3fb5.gz

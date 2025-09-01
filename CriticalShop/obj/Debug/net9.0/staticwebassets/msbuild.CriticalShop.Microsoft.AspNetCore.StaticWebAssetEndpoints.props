@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/CriticalShop/css/crudProdutos/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\crudProdutos\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-coYuEfprDq\u002BRPhLBbbgyf3fpR64gqxn74AHxpJ\u002BRWL4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7602"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022coYuEfprDq\u002BRPhLBbbgyf3fpR64gqxn74AHxpJ\u002BRWL4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 31 Aug 2025 23:38:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CriticalShop/css/crudProdutos/style.ynftpv3fb5.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\crudProdutos\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ynftpv3fb5"},{"Name":"integrity","Value":"sha256-coYuEfprDq\u002BRPhLBbbgyf3fpR64gqxn74AHxpJ\u002BRWL4="},{"Name":"label","Value":"_content/CriticalShop/css/crudProdutos/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7602"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022coYuEfprDq\u002BRPhLBbbgyf3fpR64gqxn74AHxpJ\u002BRWL4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 31 Aug 2025 23:38:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CriticalShop/css/header.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\header.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
