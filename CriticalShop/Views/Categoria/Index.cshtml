@@ -1,0 +1,31 @@
+@model IEnumerable<CriticalShop.Models.Categoria>
+@{
+    ViewData["Title"] = "Categorias";
+}
+<h2>Categorias</h2>
+<a class="btn btn-success mb-3" asp-action="Create">Nova Categoria</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria Pai</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model)
+        {
+            <tr>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nome</td>
+                <td>@(categoria.Parent?.Nome ?? "-")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@categoria.Id">Detalhes</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@categoria.Id">Editar</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@categoria.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

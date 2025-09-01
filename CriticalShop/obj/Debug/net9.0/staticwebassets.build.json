@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K/svwAdQ7Rq0AgT15OymG/a9j8luLxWQ+c10Nlglk2w=",
+  "Hash": "AHGfUfleqSW/ckegkOR9XafE96SYzcy6Dy6gZYHjNpc=",
   "Source": "CriticalShop",
   "BasePath": "_content/CriticalShop",
   "Mode": "Default",
@@ -521,6 +521,27 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleDelete#[.{fingerprint=sgj9adjlw1}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "c4e3a5xj7p",
+      "Integrity": "PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css"
+    },
+    {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dg4573axai-ag7o75518u.gz",
       "SourceId": "CriticalShop",
       "SourceType": "Discovered",
@@ -540,6 +561,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dkyjxw1v3e-wr1ht3xark.gz",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleEdit#[.{fingerprint=wr1ht3xark}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "06t6erg7sx",
+      "Integrity": "2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\f2g64w9v4h-vr1egmr9el.gz",
@@ -876,6 +918,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\mpq4rnir0u-m7y1bq6svv.gz",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleDetails#[.{fingerprint=m7y1bq6svv}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "l622qycsne",
+      "Integrity": "c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\n83sgatkpy-mlv21k5csn.gz",
@@ -1277,6 +1340,27 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\y0nsg8d9p0-mus4njggfr.gz",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleCreate#[.{fingerprint=mus4njggfr}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "72345tc96z",
+      "Integrity": "gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css"
+    },
+    {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\yb8b01977v-ft3s53vfgj.gz",
       "SourceId": "CriticalShop",
       "SourceType": "Discovered",
@@ -1380,6 +1464,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleCreate#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mus4njggfr",
+      "Integrity": "Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleCreate.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleDelete#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sgj9adjlw1",
+      "Integrity": "NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleDelete.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleDetails#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m7y1bq6svv",
+      "Integrity": "jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleDetails.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/crudProdutos/styleEdit#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wr1ht3xark",
+      "Integrity": "xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleEdit.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\header.css",
@@ -3085,6 +3253,1198 @@
         {
           "Name": "integrity",
           "Value": "sha256-wXk8YtxGKepdIF1jMqyZ1vLRhHn5ARu7xLZyj+5LcyA="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\y0nsg8d9p0-mus4njggfr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000512557663"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1950"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\y0nsg8d9p0-mus4njggfr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.mus4njggfr.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\y0nsg8d9p0-mus4njggfr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000512557663"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1950"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mus4njggfr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleCreate.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.mus4njggfr.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mus4njggfr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleCreate.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dg7bcnfdiqhxwmG9Vo07iai7kDniswAZp6ZDrDYpuds="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleCreate.mus4njggfr.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\y0nsg8d9p0-mus4njggfr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:39:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mus4njggfr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleCreate.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gV4BT5Z54zXK9Oly/ho5X7/HUueDkVzXsdHfbqhFUME="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000489955904"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000489955904"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sgj9adjlw1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDelete.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sgj9adjlw1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDelete.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sgj9adjlw1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDelete.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\mpq4rnir0u-m7y1bq6svv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000452284034"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\mpq4rnir0u-m7y1bq6svv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.m7y1bq6svv.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\mpq4rnir0u-m7y1bq6svv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000452284034"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7y1bq6svv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDetails.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.m7y1bq6svv.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7y1bq6svv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDetails.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jqnbtgem/aS0R7ZnXYSmA+JQWzgb7iSs6KQKVcbmr2I="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleDetails.m7y1bq6svv.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\mpq4rnir0u-m7y1bq6svv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:14:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m7y1bq6svv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleDetails.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c6ZXREj00LXn5NfvpB2zoEXtPFOLMah0FrqcYJko8wA="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dkyjxw1v3e-wr1ht3xark.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000449034576"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2226"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dkyjxw1v3e-wr1ht3xark.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.wr1ht3xark.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dkyjxw1v3e-wr1ht3xark.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000449034576"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2226"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wr1ht3xark"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleEdit.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.wr1ht3xark.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wr1ht3xark"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleEdit.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCPiwCpem2qQczZatYZ3thm5Aot4Zrq+QLTCT0po9bQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/crudProdutos/styleEdit.wr1ht3xark.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\Debug\\net9.0\\compressed\\dkyjxw1v3e-wr1ht3xark.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 15:49:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wr1ht3xark"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crudProdutos/styleEdit.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EzQlfRV78SjsstU8PhGThiZS4Fxyi/juMR1D9PhZJg="
         }
       ]
     },

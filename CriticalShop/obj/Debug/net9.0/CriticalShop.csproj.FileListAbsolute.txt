@@ -436,3 +436,7 @@ C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\ref\CriticalShop.dll
 C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\jqiecebxh7-ynftpv3fb5.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\y0nsg8d9p0-mus4njggfr.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\b4g68vvs7j-sgj9adjlw1.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\mpq4rnir0u-m7y1bq6svv.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\dkyjxw1v3e-wr1ht3xark.gz

@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\css\\crudProdutos\\style.css"
     },
     {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "PackagePath": "staticwebassets\\css\\crudProdutos\\styleCreate.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "PackagePath": "staticwebassets\\css\\crudProdutos\\styleDelete.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "PackagePath": "staticwebassets\\css\\crudProdutos\\styleDetails.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "PackagePath": "staticwebassets\\css\\crudProdutos\\styleEdit.css"
+    },
+    {
       "Id": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
     },
