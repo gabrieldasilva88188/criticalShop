@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\CriticalShop.csproj": {}
+    "C:\\Users\\0031432512013\\criticalShop\\criticalShop\\CriticalShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\CriticalShop.csproj": {
+    "C:\\Users\\0031432512013\\criticalShop\\criticalShop\\CriticalShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\CriticalShop.csproj",
+        "projectUniqueName": "C:\\Users\\0031432512013\\criticalShop\\criticalShop\\CriticalShop.csproj",
         "projectName": "CriticalShop",
-        "projectPath": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\CriticalShop.csproj",
-        "packagesPath": "C:\\Users\\Nefalem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nefalem\\Desktop\\criticalShop\\CriticalShop\\obj\\",
+        "projectPath": "C:\\Users\\0031432512013\\criticalShop\\criticalShop\\CriticalShop.csproj",
+        "packagesPath": "C:\\Users\\0031432512013\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\0031432512013\\criticalShop\\criticalShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nefalem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\0031432512013\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -81,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,6 +21,7 @@
                         </h5>
                         <p class="mb-0">Você está prestes a excluir o produto "<strong>@Model.Nome</strong>". Esta ação não pode ser desfeita.</p>
                     </div>
+                    <br/>
 
                     <div class="row">
                         <div class="col-md-4">
@@ -40,17 +41,18 @@
                         </div>
                         <div class="col-md-8">
                             <dl class="row">
-                                <dt class="col-sm-4">ID:</dt>
-                                <dd class="col-sm-8">@Model.Id</dd>
+                                <dt class="col-sm-4">ID: @Model.Id</dt>
+                                
 
-                                <dt class="col-sm-4">Nome:</dt>
-                                <dd class="col-sm-8">@Model.Nome</dd>
+                                <dt class="col-sm-4">Nome: @Model.Nome</dt>
+                            
 
-                                <dt class="col-sm-4">Preço:</dt>
-                                <dd class="col-sm-8">@Model.Preco.ToString("C")</dd>
+                                <dt class="col-sm-4">Preço: @Model.Preco.ToString("C")</dt>
+                               
 
                                 <dt class="col-sm-4">Categoria:</dt>
-                                <dd class="col-sm-8">
+                                <br/>
+                                <dt class="col-sm-8">
                                     @if (Model.Categoria != null)
                                     {
                                         <span class="badge bg-primary">@Model.Categoria.Nome</span>
@@ -59,7 +61,7 @@
                                     {
                                         <span class="text-muted">Sem categoria</span>
                                     }
-                                </dd>
+                                </dt>
 
                             </dl>
                         </div>

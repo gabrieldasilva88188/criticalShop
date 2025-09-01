@@ -209,12 +209,30 @@
 }
 
 /* Botões */
-.d-flex.justify-content-between {
-    margin-top: 2rem;
+/* Container dos botões */
+.d-flex.justify-content-between.mt-4 {
+    /* Garante que o container ocupe a largura total */
+    width: 100%;
+    
+    /* Configura o Flexbox */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os grupos de botões */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    gap: 1.5rem; /* Espaço entre os botões */
+
     padding-top: 1.5rem;
     border-top: 2px solid #E0E0E0;
+    margin-top: 2rem;
 }
 
+/* Container dos botões de editar e excluir para ficarem juntos */
+.d-flex.justify-content-between.mt-4 > div {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões de editar e excluir */
+}
+
+/* Melhorias gerais dos botões para visualização */
 .btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -227,8 +245,28 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
+    white-space: nowrap; /* Evita que o texto do botão quebre */
 }
 
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .d-flex.justify-content-between.mt-4 {
+        /* Alinha os botões em coluna em telas menores */
+        flex-direction: column;
+        align-items: stretch; /* Estica os botões para a largura total */
+    }
+    
+    .d-flex.justify-content-between.mt-4 > div {
+        /* Alinha os botões internos também em coluna, se necessário */
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn {
+        width: 100%; /* Faz com que os botões ocupem 100% da largura em mobile */
+        justify-content: center; /* Centraliza o texto e o ícone */
+    }
+}
 .btn-secondary {
     background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
     color: #FFFFFF;
@@ -384,34 +422,13 @@
     }
 }
 
-@keyframes pulseInfo {
-    0% { 
-        transform: scale(1);
-        box-shadow: 0 4px 12px rgba(255, 115, 21, 0.2);
-    }
-    50% { 
-        transform: scale(1.02);
-        box-shadow: 0 6px 16px rgba(255, 115, 21, 0.3);
-    }
-    100% { 
-        transform: scale(1);
-        box-shadow: 0 4px 12px rgba(255, 115, 21, 0.2);
-    }
-}
-
 .card {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.img-fluid.rounded {
-    animation: pulseInfo 3s infinite;
-}
 
 /* Efeitos de hover específicos */
-.text-center:hover .h4 {
-    color: #FF7315 !important;
-    transition: color 0.3s ease;
-}
+
 
 .dd:hover {
     background: rgba(255, 115, 21, 0.1);

@@ -347,14 +347,63 @@
 
 /* Melhoria visual para grupos de input */
 .input-group {
+    /* Define o layout do grupo, mantendo os elementos alinhados */
+    display: flex;
+    align-items: center;
+    
+    /* Borda e raio para o grupo inteiro, criando um visual unificado */
+    border: 2px solid #3A3535;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada a tudo dentro */
+    transition: all 0.3s ease; /* Adiciona transição para o hover e focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidade */
 }
 
+/* Estilo do texto "R$" dentro do grupo */
+.input-group-text {
+    background: #1f1f1f; /* Fundo branco ou claro para harmonizar com o input */
+    color: #FF7315; /* Mantém a cor do tema */
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    
+    /* Remove as bordas individuais, a borda do grupo já é suficiente */
+    border: none;
+}
+
+/* Estilo do campo de input dentro do grupo */
 .input-group .form-control {
-    border-left: none;
+    /* Remove as bordas do input para que o grupo controle a borda */
+    border: none;
+    padding: 0.8rem 1rem;
+    
+    /* Remove o background padrão do form-control e herda do grupo */
+    background: transparent;
+    
+    /* Aumenta a flexibilidade do input para preencher o espaço */
+    flex-grow: 1; 
 }
 
-.input-group .input-group-text {
-    border-right: none;
+/* Efeito de hover e focus para o grupo completo, dando feedback visual */
+.input-group:hover {
+    border-color: #FF7315;
+    box-shadow: 0 4px 10px rgba(255, 115, 21, 0.2);
+}
+
+.input-group:focus-within {
+    border-color: #FF7315;
+    box-shadow: 0 0 0 3px rgba(255, 115, 21, 0.25);
+    outline: none;
+}
+/* Limita a largura do campo de preço para telas grandes */
+@media (min-width: 992px) {
+    .preco-input {
+        max-width: 33.333%; /* Equivalente ao col-lg-4 */
+    }
+}
+
+/* Garante que o campo de preço não ocupe mais de 250px em telas extra-grandes */
+@media (min-width: 1200px) {
+    .preco-input {
+        max-width: 250px;
+    }
 }

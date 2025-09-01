@@ -98,24 +98,62 @@
 }
 
 /* Botão de warning específico para edição */
+/* Container dos botões */
+.d-flex.justify-content-between {
+    /* Garante que o container ocupe a largura total */
+    width: 100%;
+    
+    /* Configura o Flexbox */
+    display: flex;
+    justify-content: space-between; /* Move o primeiro item para a esquerda e o último para a direita */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    gap: 1.5rem; /* Espaço entre os botões */
+
+    padding-top: 1.5rem;
+    border-top: 2px solid #E0E0E0;
+    margin-top: 2rem;
+}
+
+/* --- Botão de 'Atualizar' (btn-warning) --- */
 .btn-warning {
+    /* Mantém o estilo visual do botão de alerta */
     background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
     color: #232020;
     box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
     border: none;
     font-weight: 600;
+
+    /* Remove a animação de pulsação */
+    animation: none;
 }
 
 .btn-warning:hover {
+    /* Mantém o efeito de hover */
     background: linear-gradient(135deg, #e0a800 0%, #c69500 100%);
-    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 193, 7, 0.5);
     color: #232020;
 }
 
 .btn-warning:focus {
+    /* Mantém o efeito de foco */
     box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
 }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 
 /* Estilos comuns do formulário (herdados do Create) */
 .form-label {
@@ -311,15 +349,8 @@
 }
 
 /* Animações específicas para a página de edição */
-@keyframes pulseWarning {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
 
-.btn-warning {
-    animation: pulseWarning 2s infinite;
-}
+
 
 .card {
     animation: slideInUp 0.6s ease-out;
@@ -393,14 +424,63 @@
 
 /* Melhoria visual para grupos de input */
 .input-group {
+    /* Define o layout do grupo, mantendo os elementos alinhados */
+    display: flex;
+    align-items: center;
+    
+    /* Borda e raio para o grupo inteiro, criando um visual unificado */
+    border: 2px solid #3A3535;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada a tudo dentro */
+    transition: all 0.3s ease; /* Adiciona transição para o hover e focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidade */
 }
 
+/* Estilo do texto "R$" dentro do grupo */
+.input-group-text {
+    background: #1f1f1f; /* Fundo branco ou claro para harmonizar com o input */
+    color: #FF7315; /* Mantém a cor do tema */
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    
+    /* Remove as bordas individuais, a borda do grupo já é suficiente */
+    border: none;
+}
+
+/* Estilo do campo de input dentro do grupo */
 .input-group .form-control {
-    border-left: none;
+    /* Remove as bordas do input para que o grupo controle a borda */
+    border: none;
+    padding: 0.8rem 1rem;
+    
+    /* Remove o background padrão do form-control e herda do grupo */
+    background: transparent;
+    
+    /* Aumenta a flexibilidade do input para preencher o espaço */
+    flex-grow: 1; 
 }
 
-.input-group .input-group-text {
-    border-right: none;
+/* Efeito de hover e focus para o grupo completo, dando feedback visual */
+.input-group:hover {
+    border-color: #FF7315;
+    box-shadow: 0 4px 10px rgba(255, 115, 21, 0.2);
+}
+
+.input-group:focus-within {
+    border-color: #FF7315;
+    box-shadow: 0 0 0 3px rgba(255, 115, 21, 0.25);
+    outline: none;
+}
+/* Limita a largura do campo de preço para telas grandes */
+@media (min-width: 992px) {
+    .preco-input {
+        max-width: 33.333%; /* Equivalente ao col-lg-4 */
+    }
+}
+
+/* Garante que o campo de preço não ocupe mais de 250px em telas extra-grandes */
+@media (min-width: 1200px) {
+    .preco-input {
+        max-width: 250px;
+    }
 }
