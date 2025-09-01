@@ -1,0 +1,28 @@
+@model CriticalShop.Models.Categoria
+@{
+    ViewData["Title"] = "Detalhes da Categoria";
+}
+<h2>Detalhes da Categoria</h2>
+<div class="mb-3">
+    <strong>ID:</strong> @Model.Id
+</div>
+<div class="mb-3">
+    <strong>Nome:</strong> @Model.Nome
+</div>
+<div class="mb-3">
+    <strong>Categoria Pai:</strong> @(Model.Parent?.Nome ?? "-")
+</div>
+@if (Model.SubCategorias != null && Model.SubCategorias.Any())
+{
+    <div class="mb-3">
+        <strong>Subcategorias:</strong>
+        <ul>
+            @foreach (var sub in Model.SubCategorias)
+            {
+                <li>@sub.Nome</li>
+            }
+        </ul>
+    </div>
+}
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>

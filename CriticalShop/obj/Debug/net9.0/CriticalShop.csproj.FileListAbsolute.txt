@@ -436,6 +436,7 @@ C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\criticalShop\criticalshop\obj\Debug\net9.0\ref\CriticalShop.dll
 C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\jqiecebxh7-ynftpv3fb5.gz
+<<<<<<< HEAD
 C:\Users\0031432512013\criticalShop\criticalShop\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\0031432512013\criticalShop\criticalShop\bin\Debug\net9.0\appsettings.json
 C:\Users\0031432512013\criticalShop\criticalShop\bin\Debug\net9.0\CriticalShop.staticwebassets.runtime.json
@@ -659,3 +660,9 @@ C:\Users\0031432512013\criticalShop\criticalShop\obj\Debug\net9.0\compressed\jqi
 C:\Users\0031432512013\criticalShop\criticalShop\obj\Debug\net9.0\compressed\y0nsg8d9p0-h2xo43dmc3.gz
 C:\Users\0031432512013\criticalShop\criticalShop\obj\Debug\net9.0\compressed\mpq4rnir0u-essjwk55xl.gz
 C:\Users\0031432512013\criticalShop\criticalShop\obj\Debug\net9.0\compressed\dkyjxw1v3e-0fy57f7r7y.gz
+=======
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\y0nsg8d9p0-mus4njggfr.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\b4g68vvs7j-sgj9adjlw1.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\mpq4rnir0u-m7y1bq6svv.gz
+C:\Users\Nefalem\Desktop\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\dkyjxw1v3e-wr1ht3xark.gz
+>>>>>>> 01a3c8164a70ad4c35e7ad23624389e0b7637c75
