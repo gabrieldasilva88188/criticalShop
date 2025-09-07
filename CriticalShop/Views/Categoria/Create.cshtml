@@ -2,23 +2,78 @@
 @{
     ViewData["Title"] = "Nova Categoria";
 }
-<h2>Nova Categoria</h2>
-<form asp-action="Create" method="post">
-    <div class="mb-3">
-        <label asp-for="Nome" class="form-label">Nome</label>
-        <input asp-for="Nome" class="form-control" />
-        <span asp-validation-for="Nome" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="ParentId" class="form-label">Categoria Pai (Opcional)</label>
-        <select asp-for="ParentId" class="form-select">
-            <option value="">Nenhuma</option>
-            @foreach (var cat in ViewBag.Categorias)
-            {
-                <option value="@cat.Id">@cat.Nome</option>
-            }
-        </select>
-    </div>
-    <button type="submit" class="btn btn-success">Salvar</button>
-    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
-</form>
+
+<link rel="stylesheet" href="@Url.Content("~/css/crudProdutos/styleCreate.css")">
+
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mb-0">
+                            <i class="fas fa-info-circle"></i> Informações da Categoria
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            
+                            <div class="mb-3">
+                                <label asp-for="Nome" class="form-label">
+                                    <i class="fas fa-tag"></i> Nome da Categoria
+                                </label>
+                                <input asp-for="Nome" class="form-control" placeholder="Digite o nome da categoria" />
+                                <span asp-validation-for="Nome" class="text-danger"></span>
+                                <div class="form-text">Exemplo: Livros, Dados, Miniaturas, Acessórios</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label asp-for="ParentId" class="form-label">
+                                    <i class="fas fa-sitemap"></i> Categoria Pai (Opcional)
+                                </label>
+                                <select asp-for="ParentId" class="form-select">
+                                    <option value="">Nenhuma (Categoria Principal)</option>
+                                    @foreach (var cat in ViewBag.Categorias)
+                                    {
+                                        <option value="@cat.Id">@cat.Nome</option>
+                                    }
+                                </select>
+                                <div class="form-text">Selecione uma categoria existente para criar uma subcategoria</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Voltar
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Salvar Categoria
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+}

@@ -125,7 +125,7 @@ namespace CriticalShop.Controllers
                             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
                             return View(produto);
                         }
-                        produto.Preco = produto.Preco * (1 - desconto.Valor / 100.0);
+                        // Não altera o preço, apenas valida o desconto
                     }
                     _context.Add(produto);
                     await _context.SaveChangesAsync();
@@ -217,7 +217,7 @@ namespace CriticalShop.Controllers
                             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
                             return View(produto);
                         }
-                        produto.Preco = produto.Preco * (1 - desconto.Valor / 100.0);
+                        // Não altera o preço, apenas valida o desconto
                     }
                     _context.Update(produto);
                     await _context.SaveChangesAsync();

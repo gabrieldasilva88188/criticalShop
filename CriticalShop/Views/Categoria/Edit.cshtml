@@ -2,25 +2,123 @@
 @{
     ViewData["Title"] = "Editar Categoria";
 }
-<h2>Editar Categoria</h2>
-<form asp-action="Edit" method="post">
-    <input type="hidden" asp-for="Id" />
-    <div class="mb-3">
-        <label asp-for="Nome" class="form-label">Nome</label>
-        <input asp-for="Nome" class="form-control" />
-        <span asp-validation-for="Nome" class="text-danger"></span>
-    </div>
-    <div class="mb-3">
-        <label asp-for="ParentId" class="form-label">Categoria Pai (Opcional)</label>
-        <select asp-for="ParentId" class="form-select">
-            <option value="">Nenhuma</option>
-            @foreach (var cat in ViewBag.Categorias)
-            {
-                var selected = cat.Id == Model.ParentId ? "selected" : "";
-                <option value="@cat.Id" selected="@selected">@cat.Nome</option>
-            }
-        </select>
-    </div>
-    <button type="submit" class="btn btn-warning">Salvar</button>
-    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
-</form>
+
+<link rel="stylesheet" href="@Url.Content("~/css/crudProdutos/styleEdit.css")">
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title mb-0">
+                            <i class="fas fa-pencil-alt"></i> Editar Informações
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Edit" method="post">
+                            <input type="hidden" asp-for="Id" />
+                            
+                            <!-- Informações atuais -->
+                            <div class="current-info mb-4">
+                                <h5 class="section-title">
+                                    <i class="fas fa-info-circle"></i> Informações Atuais
+                                </h5>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <span class="info-label">ID:</span>
+                                        <span class="info-value">@Model.Id</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Nome Atual:</span>
+                                        <span class="info-value">@Model.Nome</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Categoria Pai:</span>
+                                        <span class="info-value">
+                                            @if (Model.Parent != null)
+                                            {
+                                                <span class="badge bg-primary">@Model.Parent.Nome</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">Nenhuma</span>
+                                            }
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Formulário de edição -->
+                            <div class="edit-form">
+                                <h5 class="section-title">
+                                    <i class="fas fa-edit"></i> Modificar Categoria
+                                </h5>
+                                
+                                <div class="mb-3">
+                                    <label asp-for="Nome" class="form-label">
+                                        <i class="fas fa-tag"></i> Nome da Categoria
+                                    </label>
+                                    <input asp-for="Nome" class="form-control" placeholder="Digite o novo nome da categoria" />
+                                    <span asp-validation-for="Nome" class="text-danger"></span>
+                                    <div class="form-text">Nome atual: <strong>@Model.Nome</strong></div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label asp-for="ParentId" class="form-label">
+                                        <i class="fas fa-sitemap"></i> Categoria Pai
+                                    </label>
+                                    <select asp-for="ParentId" class="form-select">
+                                        <option value="">Nenhuma (Categoria Principal)</option>
+                                        @foreach (var cat in ViewBag.Categorias)
+                                        {
+                                            var isCurrentParent = cat.Id == Model.ParentId;
+                                            var isSelf = cat.Id == Model.Id;
+                                            var isDescendant = ViewBag.DescendantIds != null && ((List<int>)ViewBag.DescendantIds).Contains(cat.Id);
+                                            <option value="@cat.Id" selected="@(isCurrentParent ? "selected" : null)" disabled="@((isSelf || isDescendant) ? "disabled" : null)" style="@(isSelf || isDescendant ? "color: #6c757d; background-color: #f8f9fa;" : "")">
+                                                @cat.Nome
+                                                @(isSelf ? " (Esta categoria)" : (isDescendant ? " (Subcategoria)" : (isCurrentParent ? " (Atual)" : "")))
+                                            </option>
+                                        }
+                                    </select>
+                                    <div class="form-text">
+                                        <i class="fas fa-info-circle"></i> Não é possível selecionar esta categoria ou suas subcategorias como pai.
+                                    </div>
+                                    <span asp-validation-for="ParentId" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <a asp-action="Index" class="btn btn-secondary">
+                                        <i class="fas fa-arrow-left"></i> Cancelar
+                                    </a>
+                                    <button type="submit" class="btn btn-warning">
+                                        <i class="fas fa-save"></i> Atualizar Categoria
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+}

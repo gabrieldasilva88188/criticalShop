@@ -2,19 +2,152 @@
 @{
     ViewData["Title"] = "Excluir Categoria";
 }
-<h2>Excluir Categoria</h2>
-<div class="alert alert-danger">Tem certeza que deseja excluir esta categoria?</div>
-<div class="mb-3">
-    <strong>ID:</strong> @Model.Id
-</div>
-<div class="mb-3">
-    <strong>Nome:</strong> @Model.Nome
-</div>
-<div class="mb-3">
-    <strong>Categoria Pai:</strong> @(Model.Parent?.Nome ?? "-")
-</div>
-<form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-danger">Excluir</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+
+<link rel="stylesheet" href="@Url.Content("~/css/crudProdutos/styleDelete.css")">
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-danger">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="card-title mb-0">
+                            <i class="fas fa-exclamation-triangle"></i> Confirmar Exclusão
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Alerta de perigo -->
+                        <div class="alert alert-danger">
+                            <h5 class="alert-heading">
+                                <i class="fas fa-radiation"></i> Atenção! Ação Irreversível
+                            </h5>
+                            <p class="mb-0">Você está prestes a excluir permanentemente a categoria <strong>"@Model.Nome"</strong>. Esta ação não pode ser desfeita.</p>
+                        </div>
+
+                        <!-- Informações da categoria -->
+                        <div class="category-info-delete">
+                            <div class="info-grid">
+                                <div class="info-item danger">
+                                    <span class="info-label">
+                                        <i class="fas fa-hashtag"></i> ID:
+                                    </span>
+                                    <span class="info-value">@Model.Id</span>
+                                </div>
+                                
+                                <div class="info-item danger">
+                                    <span class="info-label">
+                                        <i class="fas fa-tag"></i> Nome:
+                                    </span>
+                                    <span class="info-value">@Model.Nome</span>
+                                </div>
+                                
+                                <div class="info-item danger">
+                                    <span class="info-label">
+                                        <i class="fas fa-sitemap"></i> Categoria Pai:
+                                    </span>
+                                    <span class="info-value">
+                                        @if (Model.Parent != null)
+                                        {
+                                            <span class="badge bg-primary">@Model.Parent.Nome</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Impacto da exclusão -->
+                        <div class="impact-section mt-4">
+                            <h5 class="section-title danger">
+                                <i class="fas fa-exclamation-circle"></i> Impacto da Exclusão
+                            </h5>
+                            
+                            <div class="impact-grid">
+                                @if (Model.SubCategorias != null && Model.SubCategorias.Any())
+                                {
+                                    <div class="impact-item">
+                                        <i class="fas fa-folder-minus text-danger"></i>
+                                        <div>
+                                            <strong>@Model.SubCategorias.Count subcategorias</strong> serão removidas
+                                            <div class="impact-detail">
+                                                <small class="text-muted">Todas as subcategorias desta categoria serão excluídas permanentemente</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                
+                                @if (ViewBag.ProductsCount > 0)
+                                {
+                                    <div class="impact-item">
+                                        <i class="fas fa-boxes text-danger"></i>
+                                        <div>
+                                            <strong>@ViewBag.ProductsCount produtos</strong> ficarão sem categoria
+                                            <div class="impact-detail">
+                                                <small class="text-muted">Os produtos desta categoria serão movidos para "Sem categoria"</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                
+                                <div class="impact-item">
+                                    <i class="fas fa-history text-danger"></i>
+                                    <div>
+                                        <strong>Esta ação é irreversível</strong>
+                                        <div class="impact-detail">
+                                            <small class="text-muted">Todos os dados relacionados serão permanentemente removidos</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulário de exclusão -->
+                        <form asp-action="Delete" method="post" class="mt-4">
+                            <input type="hidden" asp-for="Id" />
+                            
+                            <div class="d-flex justify-content-between">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Cancelar
+                                </a>
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza absoluta que deseja excluir esta categoria? Esta ação não pode ser desfeita.')">
+                                    <i class="fas fa-trash"></i> Confirmar Exclusão
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <script>
+        // Confirmação adicional para evitar exclusões acidentais
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const confirmed = confirm('⚠️ ATENÇÃO: Esta ação é PERMANENTE e IRREVERSÍVEL!\n\nTem certeza absoluta que deseja excluir a categoria "@Model.Nome"?\n\n✅ Todos os dados relacionados serão perdidos permanentemente.');
+            if (!confirmed) {
+                e.preventDefault();
+            }
+        });
+    </script>
+}
