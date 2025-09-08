@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qqS/ZPxsX0J8GdJlKxcrNs4wvT91oeGaG3Pp3RVK12A=",
+  "Hash": "4ouREnbD8vfeaeT3NOjZcGE6ySuueOIk37G2Ehi5dW0=",
   "Source": "CriticalShop",
   "BasePath": "_content/CriticalShop",
   "Mode": "Default",
@@ -521,12 +521,12 @@
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-w60pjajuz3.gz",
       "SourceId": "CriticalShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/CriticalShop",
-      "RelativePath": "css/crudProdutos/styleDelete#[.{fingerprint=sgj9adjlw1}]?.css.gz",
+      "RelativePath": "css/crudProdutos/styleDelete#[.{fingerprint=w60pjajuz3}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -535,8 +535,8 @@
       "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "c4e3a5xj7p",
-      "Integrity": "PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=",
+      "Fingerprint": "z9i3y15m87",
+      "Integrity": "uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleDelete.css"
@@ -666,6 +666,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\ftcrpltuve-spw2hv71jo.gz",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/Desconto/styleDesconto#[.{fingerprint=spw2hv71jo}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "td4ckqp4fn",
+      "Integrity": "z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\g4bem4ijos-03hjc8e09r.gz",
@@ -1501,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sgj9adjlw1",
-      "Integrity": "NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=",
+      "Fingerprint": "w60pjajuz3",
+      "Integrity": "ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleDelete.css"
@@ -1548,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\crudProdutos\\styleEdit.css"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "css/Desconto/styleDesconto#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "spw2hv71jo",
+      "Integrity": "IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Desconto\\styleDesconto.css"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\header.css",
@@ -1611,6 +1653,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\desconto50Off.png",
+      "SourceId": "CriticalShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\",
+      "BasePath": "_content/CriticalShop",
+      "RelativePath": "images/desconto50Off#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p428bzhh99",
+      "Integrity": "yWNjqKStBgxdaMuho5Yn48rIqWLwrQ8huThn3+IWxD4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\desconto50Off.png"
     },
     {
       "Identity": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\guiaCoc.png",
@@ -3556,12 +3619,12 @@
     },
     {
       "Route": "css/crudProdutos/styleDelete.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-w60pjajuz3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000489955904"
+          "Quality": "0.000493827160"
         }
       ],
       "ResponseHeaders": [
@@ -3571,15 +3634,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2040"
+          "Value": "2024"
         },
         {
           "Name": "ETag",
-          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+          "Value": "\"uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3599,13 +3662,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+          "Value": "W/\"ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+          "Value": "sha256-ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4="
         }
       ]
     },
@@ -3620,7 +3683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8394"
+          "Value": "8335"
         },
         {
           "Name": "Content-Type",
@@ -3628,11 +3691,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+          "Value": "\"ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3642,13 +3705,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+          "Value": "sha256-ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4="
         }
       ]
     },
     {
       "Route": "css/crudProdutos/styleDelete.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-w60pjajuz3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3657,7 +3720,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2040"
+          "Value": "2024"
         },
         {
           "Name": "Content-Type",
@@ -3665,11 +3728,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+          "Value": "\"uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3687,18 +3750,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4="
+          "Value": "sha256-uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs="
         }
       ]
     },
     {
-      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css",
-      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Route": "css/crudProdutos/styleDelete.w60pjajuz3.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-w60pjajuz3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000489955904"
+          "Quality": "0.000493827160"
         }
       ],
       "ResponseHeaders": [
@@ -3708,15 +3771,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2040"
+          "Value": "2024"
         },
         {
           "Name": "ETag",
-          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+          "Value": "\"uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3736,13 +3799,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+          "Value": "W/\"ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sgj9adjlw1"
+          "Value": "w60pjajuz3"
         },
         {
           "Name": "label",
@@ -3750,12 +3813,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+          "Value": "sha256-ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4="
         }
       ]
     },
     {
-      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css",
+      "Route": "css/crudProdutos/styleDelete.w60pjajuz3.css",
       "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3765,7 +3828,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8394"
+          "Value": "8335"
         },
         {
           "Name": "Content-Type",
@@ -3773,11 +3836,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM=\""
+          "Value": "\"ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3787,7 +3850,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sgj9adjlw1"
+          "Value": "w60pjajuz3"
         },
         {
           "Name": "label",
@@ -3795,13 +3858,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NCeRujVLhAfZoetdlKb0kz/SlPs8zdjh5c0gLaUmzDM="
+          "Value": "sha256-ONj7GWoXbiZ9GhB5gz2hEe/exCWZOWG2TMjFSm/fLB4="
         }
       ]
     },
     {
-      "Route": "css/crudProdutos/styleDelete.sgj9adjlw1.css.gz",
-      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-sgj9adjlw1.gz",
+      "Route": "css/crudProdutos/styleDelete.w60pjajuz3.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\b4g68vvs7j-w60pjajuz3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3810,7 +3873,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2040"
+          "Value": "2024"
         },
         {
           "Name": "Content-Type",
@@ -3818,11 +3881,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4=\""
+          "Value": "\"uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 21:27:22 GMT"
+          "Value": "Sun, 07 Sep 2025 23:09:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3840,7 +3903,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sgj9adjlw1"
+          "Value": "w60pjajuz3"
         },
         {
           "Name": "label",
@@ -3848,7 +3911,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PLhyNOsd/v8ODuk9j2FwpmVFoifuja/eq8mn0DjLab4="
+          "Value": "sha256-uapCRMJ4cfnWO7hK4WP0LidWiK+E0TjQJpchd/EF9rs="
         }
       ]
     },
@@ -4445,6 +4508,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-97RaRqIDCFJRkgX74i1RcyDiSjSO52Tup+XrknVEXjc="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\ftcrpltuve-spw2hv71jo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000707714084"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1412"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5204"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\ftcrpltuve-spw2hv71jo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.spw2hv71jo.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\ftcrpltuve-spw2hv71jo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000707714084"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1412"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spw2hv71jo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Desconto/styleDesconto.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.spw2hv71jo.css",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5204"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spw2hv71jo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Desconto/styleDesconto.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IE+qDcE6K6ZU/rAcdFaRYNvPbB5FwiNiKnJLfjO55H0="
+        }
+      ]
+    },
+    {
+      "Route": "css/Desconto/styleDesconto.spw2hv71jo.css.gz",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\Debug\\net9.0\\compressed\\ftcrpltuve-spw2hv71jo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 15:06:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spw2hv71jo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Desconto/styleDesconto.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5LVS82Ccmrq0y6IW+1RhwENYzNVxZKrdFcaKy2Jw/c="
         }
       ]
     },
@@ -5339,6 +5700,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "images/desconto50Off.p428bzhh99.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\desconto50Off.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2379646"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWNjqKStBgxdaMuho5Yn48rIqWLwrQ8huThn3+IWxD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 14:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p428bzhh99"
+        },
+        {
+          "Name": "label",
+          "Value": "images/desconto50Off.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWNjqKStBgxdaMuho5Yn48rIqWLwrQ8huThn3+IWxD4="
+        }
+      ]
+    },
+    {
+      "Route": "images/desconto50Off.png",
+      "AssetFile": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\desconto50Off.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2379646"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yWNjqKStBgxdaMuho5Yn48rIqWLwrQ8huThn3+IWxD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 14:44:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yWNjqKStBgxdaMuho5Yn48rIqWLwrQ8huThn3+IWxD4="
         }
       ]
     },

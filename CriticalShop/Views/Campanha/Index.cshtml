@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Modo Campanha";
+}
+
+<h2>Modo Campanha</h2>
+<p>Ative ou desative campanhas especiais para o site.</p>
+
+<form method="post" asp-action="ToggleCampanha">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="campanhaAtiva" name="campanhaAtiva" value="true" @(ViewBag.CampanhaAtiva ? "checked" : "") />
+        <label class="form-check-label" for="campanhaAtiva">
+            Ativar Dia 50% Off
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+</form>
+
+@if (ViewBag.CampanhaAtiva)
+{
+    <div class="alert alert-success mt-3">
+        <strong>Campanha ativa!</strong> Todos os produtos estão com 50% de desconto visual.
+    </div>
+}
+else
+{
+    <div class="alert alert-secondary mt-3">
+        <strong>Campanha desativada.</strong> Os preços estão normais.
+    </div>
+}

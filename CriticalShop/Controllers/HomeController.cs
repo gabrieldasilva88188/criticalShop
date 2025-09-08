@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CriticalShop.Models;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace CriticalShop.Controllers;
 
@@ -18,8 +19,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-    var produtos = _context.Produtos.ToList();
-    return View(produtos);
+        var produtos = _context.Produtos
+            .Include(p => p.Desconto)
+            .ToList();
+        ViewBag.CampanhaAtiva = CriticalShop.Controllers.CampanhaController.CampanhaAtiva;
+        return View(produtos);
     }
 
     public IActionResult Privacy()

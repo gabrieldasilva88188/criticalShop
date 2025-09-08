@@ -364,7 +364,6 @@ C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\scopedcss\bundle\CriticalShop.styles.css
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\jqiecebxh7-ln6gv1x77s.gz
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\y0nsg8d9p0-h2xo43dmc3.gz
-C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\b4g68vvs7j-sgj9adjlw1.gz
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\mpq4rnir0u-essjwk55xl.gz
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\dkyjxw1v3e-0fy57f7r7y.gz
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\fcuub7srep-ga7reyvncw.gz
@@ -445,3 +444,5 @@ C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.pdb
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\ref\CriticalShop.dll
+C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\b4g68vvs7j-w60pjajuz3.gz
+C:\Users\Nefalem\Desktop\Versão Final 07-09-2025\criticalShop\criticalshop\obj\Debug\net9.0\compressed\ftcrpltuve-spw2hv71jo.gz

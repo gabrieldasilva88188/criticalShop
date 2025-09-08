@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "PackagePath": "staticwebassets\\css\\Desconto\\styleDesconto.css"
+    },
+    {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\style.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\style.css"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\desconto50Off.png",
+      "PackagePath": "staticwebassets\\images\\desconto50Off.png"
     },
     {
       "Id": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\wwwroot\\images\\guiaCoc.png",

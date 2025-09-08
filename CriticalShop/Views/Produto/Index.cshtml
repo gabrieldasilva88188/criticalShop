@@ -64,17 +64,31 @@
                         </td>
                         <td>@item.Nome</td>
                         <td>
-                            @if (item.Desconto != null)
+                            @{
+                                var precoOriginal = item.Preco;
+                                var precoComDesconto = item.Desconto != null ? precoOriginal * (1 - item.Desconto.Valor / 100.0) : precoOriginal;
+                                var campanhaAtiva = ViewBag.CampanhaAtiva == true;
+                                var precoCampanha = campanhaAtiva ? precoComDesconto * 0.5 : precoComDesconto;
+                            }
+                            @if (campanhaAtiva)
                             {
                                 <div>
-                                    <span class="text-decoration-line-through text-muted">@item.Preco.ToString("C")</span>
+                                    <span class="text-decoration-line-through text-muted">@precoComDesconto.ToString("C")</span>
                                     <br>
-                                    <span class="text-success fw-bold">@((item.Preco * (1 - item.Desconto.Valor / 100.0)).ToString("C"))</span>
+                                    <span class="text-danger fw-bold">@precoCampanha.ToString("C")</span>
+                                </div>
+                            }
+                            else if (item.Desconto != null)
+                            {
+                                <div>
+                                    <span class="text-decoration-line-through text-muted">@precoOriginal.ToString("C")</span>
+                                    <br>
+                                    <span class="text-success fw-bold">@precoComDesconto.ToString("C")</span>
                                 </div>
                             }
                             else
                             {
-                                <span>@item.Preco.ToString("C")</span>
+                                <span>@precoOriginal.ToString("C")</span>
                             }
                         </td>
                         <td>@(item.Categoria?.Nome ?? "Sem categoria")</td>

@@ -1,5 +1,7 @@
 @model CriticalShop.Models.Produto
 
+<link rel="stylesheet" href="@Url.Content("~/css/Desconto/styleDesconto.css")">
+
 <div class="product-card">
     <div class="product-image">
         @if (!string.IsNullOrEmpty(Model.Img))
@@ -17,9 +19,51 @@
     <div class="product-info">
         <h3>@Model.Nome</h3>
         <span class="product-category">@Model.Categoria?.Nome</span>
-        <span class="product-price">@Model.Preco.ToString("C")</span>
+        
+        @{
+            var precoOriginal = Model.Preco;
+            var precoComDesconto = Model.Desconto != null ? precoOriginal * (1 - Model.Desconto.Valor / 100.0) : precoOriginal;
+            var precoCampanha = ViewBag.CampanhaAtiva == true ? precoComDesconto * 0.5 : precoComDesconto;
+            var economia = precoOriginal - precoCampanha;
+        }
+        
+        <div class="product-price @(ViewBag.CampanhaAtiva == true ? "has-campaign" : Model.Desconto != null ? "has-discount" : "")">
+            @if (ViewBag.CampanhaAtiva == true)
+            {
+                <span class="current-price">
+                    @precoCampanha.ToString("C")
+                    <span class="campaign-badge">🎯 50% OFF</span>
+                </span>
+                <span class="original-price">@precoComDesconto.ToString("C")</span>
+                
+                <div class="savings-container">
+                    <span class="savings-text">
+                        <i class="fas fa-piggy-bank"></i>
+                        Economize @economia.ToString("C")
+                    </span>
+                </div>
+            }
+            else if (Model.Desconto != null)
+            {
+                <span class="current-price">
+                    @precoComDesconto.ToString("C")
+                    <span class="discount-badge">@Model.Desconto.Valor% OFF</span>
+                </span>
+                <span class="original-price">@precoOriginal.ToString("C")</span>
+                
+                <div class="savings-container">
+                    <span class="savings-text">
+                        <i class="fas fa-piggy-bank"></i>
+                        Economize @((precoOriginal - precoComDesconto).ToString("C"))
+                    </span>
+                </div>
+            }
+            else
+            {
+                <span class="current-price">@precoOriginal.ToString("C")</span>
+            }
+        </div>
+        
         <button class="add-to-cart" data-id="@Model.Id">Adicionar ao Carrinho</button>
     </div>
 </div>
-
-
