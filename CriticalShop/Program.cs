@@ -8,6 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 // ==============================================
 builder.Services.AddControllersWithViews();
 
+// Configuração de sessão
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 // EF Core + SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -42,6 +51,9 @@ app.UseStaticFiles(new StaticFileOptions
 });
 
 app.UseRouting();
+
+// Middleware de sessão
+app.UseSession();
 
 // Se ainda não tem autenticação configurada, você pode remover a linha abaixo.
 // app.UseAuthentication();

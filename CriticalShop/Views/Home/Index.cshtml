@@ -30,7 +30,7 @@
         <!-- Login / Cadastro -->
         <div class="user-actions">
             <a href="#" class="login-btn">🛡️ Login</a>
-            <a href="#" class="cart-btn">🎒 <span class="cart-count">0</span></a>
+            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn">🎒 <span class="cart-count">0</span></a>
         </div>
     </div>
 
@@ -74,5 +74,7 @@
     </div>
 </section>
 
+<script src="@Url.Content("~/js/site.js")"></script>
+<script src="@Url.Content("~/js/carrinho.js")"></script>
 </body>
 </html>

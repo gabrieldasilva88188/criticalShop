@@ -1,0 +1,142 @@
+@model CriticalShop.Models.Carrinho
+
+@{
+    ViewData["Title"] = "Meu Carrinho";
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/Carrinho/style.css")">
+
+<div class="cart-container">
+    <div class="cart-header">
+        <h1><i class="fas fa-shopping-cart"></i> Meu Carrinho</h1>
+        <p class="cart-subtitle">Revise seus itens antes de finalizar a compra</p>
+    </div>
+
+    @if (Model?.Itens?.Any() == true)
+    {
+        <div class="cart-content">
+            <div class="cart-items">
+                @foreach (var item in Model.Itens)
+                {
+                    <div class="cart-item" data-item-id="@item.Id">
+                        <div class="item-image">
+                            @if (!string.IsNullOrEmpty(item.Produto?.Img))
+                            {
+                                <img src="@item.Produto.Img" alt="@item.Produto.Nome">
+                            }
+                            else
+                            {
+                                <div class="no-image">
+                                    <i class="fas fa-image"></i>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="item-details">
+                            <h3 class="item-name">@item.Produto?.Nome</h3>
+                            <p class="item-category">@item.Produto?.Categoria?.Nome</p>
+                            
+                            <div class="item-price-info">
+                                @if (item.PrecoFinal < item.PrecoUnitario)
+                                {
+                                    <span class="original-price">@item.PrecoUnitario.ToString("C")</span>
+                                    <span class="final-price">@item.PrecoFinal.ToString("C")</span>
+                                    <span class="economy">
+                                        <i class="fas fa-piggy-bank"></i>
+                                        Economize @item.Economia.ToString("C")
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="final-price">@item.PrecoFinal.ToString("C")</span>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="item-controls">
+                            <div class="quantity-control">
+                                <button class="btn-quantity" onclick="alterarQuantidade(@item.Id, -1)">
+                                    <i class="fas fa-minus">-</i>
+                                </button>
+                                <span class="quantity-display" id="quantity-@item.Id">@item.Quantidade</span>
+                                <button class="btn-quantity" onclick="alterarQuantidade(@item.Id, 1)">
+                                    <i class="fas fa-plus">+</i>
+                                </button>
+                            </div>
+                            
+                            <div class="item-subtotal">
+                                <strong>@item.Subtotal.ToString("C")</strong>
+                            </div>
+                            
+                            <button class="btn-remove" onclick="removerItem(@item.Id)">
+                                <i class="fas fa-trash"></i>
+                                Remover
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-header">
+                    <h3>Resumo do Pedido</h3>
+                </div>
+                
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Total de itens:</span>
+                        <span id="total-itens">@Model.TotalItens</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">@Model.Total.ToString("C")</span>
+                    </div>
+                    
+                    @if (Model.TotalComDesconto < Model.Total)
+                    {
+                        <div class="summary-row discount">
+                            <span>Descontos aplicados:</span>
+                            <span>-@((Model.Total - Model.TotalComDesconto).ToString("C"))</span>
+                        </div>
+                    }
+                    
+                    <div class="summary-row total">
+                        <span><strong>Total:</strong></span>
+                        <span id="total-final"><strong>@Model.TotalComDesconto.ToString("C")</strong></span>
+                    </div>
+                </div>
+
+                <div class="summary-actions">
+                    <button class="btn-clear" onclick="limparCarrinho()">
+                        <i class="fas fa-trash"></i>
+                        Limpar Carrinho
+                    </button>
+                    
+                    <button class="btn-checkout">
+                        <i class="fas fa-credit-card"></i>
+                        Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="empty-cart">
+            <div class="empty-cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h2>Seu carrinho está vazio</h2>
+            <p>Adicione alguns produtos incríveis para começar suas aventuras!</p>
+            <a asp-controller="Home" asp-action="Index" class="btn-continue-shopping">
+                <i class="fas fa-arrow-left"></i>
+                Continuar Comprando
+            </a>
+        </div>
+    }
+</div>
+
+<script src="@Url.Content("~/js/site.js")"></script>
+<script src="@Url.Content("~/js/carrinho.js")"></script>
+

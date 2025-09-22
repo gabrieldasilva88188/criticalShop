@@ -13,6 +13,8 @@ namespace CriticalShop.Data
         public DbSet<Desconto> Descontos { get; set; }
         public DbSet<Avaliacao> Avaliacoes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Carrinho> Carrinhos { get; set; }
+        public DbSet<ItemCarrinho> ItensCarrinho { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -75,6 +77,42 @@ namespace CriticalShop.Data
                 .Property(c => c.Nome)
                 .IsRequired()
                 .HasMaxLength(50);
+
+            // Relacionamento Carrinho - Usuario
+            modelBuilder.Entity<Carrinho>()
+                .HasOne(c => c.Usuario)
+                .WithMany()
+                .HasForeignKey(c => c.UsuarioId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            // Relacionamento ItemCarrinho - Carrinho
+            modelBuilder.Entity<ItemCarrinho>()
+                .HasOne(i => i.Carrinho)
+                .WithMany(c => c.Itens)
+                .HasForeignKey(i => i.CarrinhoId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Relacionamento ItemCarrinho - Produto
+            modelBuilder.Entity<ItemCarrinho>()
+                .HasOne(i => i.Produto)
+                .WithMany()
+                .HasForeignKey(i => i.ProdutoId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Configurações para Carrinho
+            modelBuilder.Entity<Carrinho>()
+                .Property(c => c.SessionId)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            // Configurações para ItemCarrinho
+            modelBuilder.Entity<ItemCarrinho>()
+                .Property(i => i.PrecoUnitario)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<ItemCarrinho>()
+                .Property(i => i.PrecoFinal)
+                .HasColumnType("decimal(18,2)");
 
             base.OnModelCreating(modelBuilder);
         }

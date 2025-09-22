@@ -3116,11 +3116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\CriticalShop.csproj",
+      "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\Carrinho DarkSide\\criticalShop\\CriticalShop\\CriticalShop.csproj",
       "projectName": "CriticalShop",
-      "projectPath": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\CriticalShop.csproj",
+      "projectPath": "C:\\Users\\Nefalem\\Desktop\\Carrinho DarkSide\\criticalShop\\CriticalShop\\CriticalShop.csproj",
       "packagesPath": "C:\\Users\\Nefalem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nefalem\\Desktop\\Versão Final 07-09-2025\\criticalShop\\criticalshop\\obj\\",
+      "outputPath": "C:\\Users\\Nefalem\\Desktop\\Carrinho DarkSide\\criticalShop\\CriticalShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
