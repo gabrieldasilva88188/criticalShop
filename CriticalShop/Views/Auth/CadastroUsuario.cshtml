@@ -3,11 +3,128 @@
 @{
     ViewData["Title"] = "Cadastro de Usuário";
 }
-<link rel="stylesheet" href="@Url.Content("~/css/login/CadastroUser.css")">
+<style>
+    /* Paleta de Cores:
+       Quase Preto: #232020;
+       Laranja Vibrante: #FF7315;
+       Cinza Claro (Fundo): #F4F4F4;
+       Cinza Escuro (Card): #3A3535;
+    */
+
+    /* Estilo geral da página */
+    body {
+        background-color: #F4F4F4; /* Cor de fundo principal */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Estilização do Card Principal */
+    .card {
+        background-color: #3A3535; /* Fundo do card */
+        color: #F4F4F4; /* Cor do texto principal dentro do card */
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden; /* Garante que os cantos arredondados sejam aplicados a tudo */
+    }
+
+    /* Cabeçalho do Card */
+    .card-header {
+        background-color: #232020; /* Cor mais escura para o cabeçalho */
+        border-bottom: 2px solid #FF7315; /* Linha de destaque laranja */
+        padding: 20px;
+    }
+
+    .card-header h3 {
+        color: #F4F4F4;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    /* Corpo do Card */
+    .card-body {
+        padding: 30px;
+    }
+
+    /* Labels dos campos do formulário */
+    .form-label {
+        font-weight: 600;
+        color: #F4F4F4;
+    }
+
+    /* Inputs, Textarea e outros controles de formulário */
+    .form-control {
+        background-color: #232020; /* Fundo dos inputs */
+        color: #F4F4F4; /* Cor do texto digitado */
+        border: 1px solid #555;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    /* Efeito de foco para os inputs */
+    .form-control:focus {
+        background-color: #232020;
+        color: #F4F4F4;
+        border-color: #FF7315; /* Borda laranja ao focar */
+        box-shadow: 0 0 0 0.25rem rgba(255, 115, 21, 0.25); /* Sombra suave laranja */
+    }
+
+    /* Cor do texto do placeholder */
+    .form-control::placeholder {
+        color: #888;
+    }
+
+    /* Mensagens de validação de erro */
+    .text-danger {
+        color: #ff8a8a !important; /* Um vermelho mais claro para melhor contraste */
+        font-size: 0.9em;
+    }
+
+    /* Botão de Cadastro Principal */
+    .btn-primary {
+        background-color: #FF7315; /* Cor de fundo laranja */
+        border-color: #FF7315; /* Cor da borda laranja */
+        color: #F4F4F4; /* Texto do botão */
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #e66000; /* Laranja um pouco mais escuro no hover */
+        border-color: #e66000;
+        transform: translateY(-2px); /* Efeito de elevação sutil */
+    }
+
+    /* Rodapé do Card */
+    .card-footer {
+        background-color: #232020;
+        border-top: 1px solid #3A3535;
+        padding: 20px;
+    }
+
+    /* Links no rodapé */
+    .card-footer .btn-link {
+        color: #FF7315;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .card-footer .btn-link:hover {
+        color: #F4F4F4;
+        text-decoration: underline;
+    }
+
+    /* Estilos específicos para o seletor de data */
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1); /* Inverte a cor do ícone do calendário para ficar visível no fundo escuro */
+    }
+</style>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            
+            <div class="card">
                 <div class="card-header">
                     <h3 class="text-center">Cadastro de Usuário</h3>
                 </div>
@@ -84,7 +201,7 @@
                     <br>
                     <a asp-controller="Home" asp-action="Index" class="btn btn-link">Voltar ao Site</a>
                 </div>
-         
+            </div>
         </div>
     </div>
 </div>
