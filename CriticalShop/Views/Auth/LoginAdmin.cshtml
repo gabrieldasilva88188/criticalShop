@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Login Administrador";
 }
-
+<link rel="stylesheet" href="@Url.Content("~/css/login/loginuser.css")">
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -24,17 +24,21 @@
                             <label for="email" class="form-label">Email:</label>
                             <input type="text" class="form-control" id="email" name="email" required>
                         </div>
+                        <br />
                         <div class="mb-3">
                             <label for="senha" class="form-label">Senha:</label>
                             <input type="password" class="form-control" id="senha" name="senha" required>
                         </div>
+                        <br />
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Entrar</button>
                         </div>
                     </form>
                 </div>
-                <div class="card-footer text-center">
-                    <a asp-controller="Home" asp-action="Index" class="btn btn-link">Voltar ao Site</a>
+                <div class="card-footer">
+                <div class="footer-links">
+                    <a asp-controller="Home" asp-action="Index">Voltar ao Site</a>
+                    </div>
                 </div>
             </div>
         </div>

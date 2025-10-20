@@ -1,149 +1,112 @@
 @{
     ViewData["Title"] = "Hub Administrativo";
 }
+<link rel="stylesheet" href="@Url.Content("~/css/HubAdmin/hub.css")">
+<div class="container">
+        <!-- Header -->
+        <div class="admin-header">
+            <h2>Hub Administrativo</h2>
+            <div class="admin-info">
+                <span class="welcome-badge">Bem-vindo, @ViewBag.AdminNome</span>
+                <a asp-controller="Auth" asp-action="Logout" class="logout-btn">Logout</a>
+            </div>
+        </div>
 
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2>Hub Administrativo</h2>
-                <div>
-                    <span class="badge bg-primary">Bem-vindo, @ViewBag.AdminNome</span>
-                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-outline-danger btn-sm ms-2">Logout</a>
-                </div>
+        <!-- Alert Messages -->
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+        }
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+
+        <!-- Statistics Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">@ViewBag.TotalProdutos</div>
+                <div class="stat-label">Produtos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">@ViewBag.TotalCategorias</div>
+                <div class="stat-label">Categorias</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">@ViewBag.TotalUsuarios</div>
+                <div class="stat-label">Usuários</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">@ViewBag.TotalAdmins</div>
+                <div class="stat-label">Admins</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">@ViewBag.TotalCarrinhos</div>
+                <div class="stat-label">Carrinhos</div>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="menu-grid">
+            <!-- First Row -->
+            <div class="menu-card">
+                <h5>Produtos</h5>
+                <p>Gerenciar produtos do sistema</p>
+                <a asp-action="Produtos" class="btn-primary">Gerenciar</a>
+            </div>
+            <div class="menu-card">
+                <h5>Categorias</h5>
+                <p>Gerenciar categorias</p>
+                <a asp-action="Categorias" class="btn-primary">Gerenciar</a>
+            </div>
+            <div class="menu-card">
+                <h5>Usuários</h5>
+                <p>Gerenciar usuários do sistema</p>
+                <a asp-action="Usuarios" class="btn-primary">Gerenciar</a>
+            </div>
+            <div class="menu-card">
+                <h5>Carrinhos</h5>
+                <p>Visualizar carrinhos de compra</p>
+                <a asp-action="Carrinhos" class="btn-primary">Visualizar</a>
             </div>
 
-            @if (TempData["ErrorMessage"] != null)
-            {
-                <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
-            }
-            @if (TempData["SuccessMessage"] != null)
-            {
-                <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-            }
-
-            <!-- Cards de Estatísticas -->
-            <div class="row mb-4">
-                <div class="col-md-2">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">@ViewBag.TotalProdutos</h5>
-                            <p class="card-text">Produtos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">@ViewBag.TotalCategorias</h5>
-                            <p class="card-text">Categorias</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">@ViewBag.TotalUsuarios</h5>
-                            <p class="card-text">Usuários</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">@ViewBag.TotalAdmins</h5>
-                            <p class="card-text">Admins</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">@ViewBag.TotalCarrinhos</h5>
-                            <p class="card-text">Carrinhos</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Second Row -->
+            <div class="menu-card">
+                <h5>Administradores</h5>
+                <p>Gerenciar administradores</p>
+                <a asp-action="Admins" class="btn-primary">Gerenciar</a>
             </div>
-
-            <!-- Menu de Navegação -->
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Produtos</h5>
-                            <p class="card-text">Gerenciar produtos do sistema</p>
-                            <a asp-action="Produtos" class="btn btn-primary">Gerenciar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Categorias</h5>
-                            <p class="card-text">Gerenciar categorias</p>
-                            <a asp-action="Categorias" class="btn btn-primary">Gerenciar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Usuários</h5>
-                            <p class="card-text">Gerenciar usuários do sistema</p>
-                            <a asp-action="Usuarios" class="btn btn-primary">Gerenciar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Carrinhos</h5>
-                            <p class="card-text">Visualizar carrinhos de compra</p>
-                            <a asp-action="Carrinhos" class="btn btn-primary">Visualizar</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="menu-card">
+                <h5>Estatísticas</h5>
+                <p>Relatórios e estatísticas</p>
+                <a asp-action="Estatisticas" class="btn-primary">Visualizar</a>
             </div>
-
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Administradores</h5>
-                            <p class="card-text">Gerenciar administradores</p>
-                            <a asp-action="Admins" class="btn btn-primary">Gerenciar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Estatísticas</h5>
-                            <p class="card-text">Relatórios e estatísticas</p>
-                            <a asp-action="Estatisticas" class="btn btn-primary">Visualizar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">CRUD Produtos</h5>
-                            <p class="card-text">Acesso direto ao CRUD</p>
-                            <a asp-controller="Produto" asp-action="Index" class="btn btn-secondary">Acessar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">CRUD Categorias</h5>
-                            <p class="card-text">Acesso direto ao CRUD</p>
-                            <a asp-controller="Categoria" asp-action="Index" class="btn btn-secondary">Acessar</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="menu-card">
+                <h5>CRUD Produtos</h5>
+                <p>Acesso direto ao CRUD</p>
+                <a asp-controller="Produto" asp-action="Index" class="btn-secondary">Acessar</a>
+            </div>
+            <div class="menu-card">
+                <h5>CRUD Categorias</h5>
+                <p>Acesso direto ao CRUD</p>
+                <a asp-controller="Categoria" asp-action="Index" class="btn-secondary">Acessar</a>
             </div>
         </div>
     </div>
-</div>
+
+    <script>
+        // Simple animation on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects
+            const cards = document.querySelectorAll('.stat-card, .menu-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>

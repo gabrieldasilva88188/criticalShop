@@ -1,44 +1,56 @@
 @{
     ViewData["Title"] = "Login Usuário";
 }
-
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-center">Login Usuário</h3>
-                </div>
-                <div class="card-body">
+<link rel="stylesheet" href="@Url.Content("~/css/login/loginuser.css")">
+ <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="brand-logo">CriticalShop</div>
+                <h3>Login de Usuário</h3>
+                <p style="opacity: 0.9; margin-top: 5px;">Acesse sua conta</p>
+            </div>
+            
+            <div class="card-body">
+                <!-- Alertas - Funcionam com TempData do backend -->
+                <div class="alert alert-danger" id="errorAlert">
                     @if (TempData["ErrorMessage"] != null)
                     {
-                        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                        @TempData["ErrorMessage"]
                     }
+                </div>
+                
+                <div class="alert alert-success" id="successAlert">
                     @if (TempData["SuccessMessage"] != null)
                     {
-                        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+                        @TempData["SuccessMessage"]
                     }
-
-                    <form asp-action="LoginUsuario" method="post">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="senha" class="form-label">Senha:</label>
-                            <input type="password" class="form-control" id="senha" name="senha" required>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Entrar</button>
-                        </div>
-                    </form>
                 </div>
-                <div class="card-footer text-center">
-                    <a asp-action="CadastroUsuario" class="btn btn-link">Não tem conta? Cadastre-se</a>
-                    <br>
-                    <a asp-controller="Home" asp-action="Index" class="btn btn-link">Voltar ao Site</a>
+                
+                <form asp-action="LoginUsuario" method="post">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha" class="form-label">Senha:</label>
+                        <div class="input-with-icon">
+                            <input type="password" class="form-control" id="senha" name="senha" required placeholder="Sua senha">
+                            <span class="input-icon password-toggle">👁️</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="card-footer">
+                <div class="footer-links">
+                    <a asp-action="CadastroUsuario">Não tem conta? Cadastre-se</a>
+                    <a asp-controller="Home" asp-action="Index">Voltar ao Site</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
