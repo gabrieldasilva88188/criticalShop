@@ -82,6 +82,23 @@
                     <h3>Resumo do Pedido</h3>
                 </div>
                 
+                <!-- Calculadora de Frete -->
+                <div class="frete-calculator">
+                    <h4><i class="fas fa-truck"></i> Calcular Frete</h4>
+                    <div class="frete-input-group">
+                        <input type="text" id="cep-input" class="form-control" placeholder="Digite seu CEP" maxlength="9" />
+                        <button class="btn-calcular-frete" onclick="calcularFrete()">
+                            <i class="fas fa-calculator"></i>
+                            Ok
+                        </button>
+                    </div>
+                    <div id="frete-resultado" class="frete-resultado" style="display: none;">
+                        <div id="frete-endereco" class="frete-endereco"></div>
+                        <div id="frete-opcoes" class="frete-opcoes"></div>
+                    </div>
+                    <div id="frete-erro" class="alert alert-danger" style="display: none;"></div>
+                </div>
+                
                 <div class="summary-details">
                     <div class="summary-row">
                         <span>Total de itens:</span>
@@ -100,6 +117,11 @@
                             <span>-@((Model.Total - Model.TotalComDesconto).ToString("C"))</span>
                         </div>
                     }
+                    
+                    <div id="frete-selecionado-row" class="summary-row" style="display: none;">
+                        <span>Frete:</span>
+                        <span id="frete-valor">R$ 0,00</span>
+                    </div>
                     
                     <div class="summary-row total">
                         <span><strong>Total:</strong></span>

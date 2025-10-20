@@ -34,6 +34,7 @@
                             <th>Telefone</th>
                             <th>Data Cadastro</th>
                             <th>Status</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -55,6 +56,11 @@
                                     {
                                         <span class="badge bg-danger">Inativo</span>
                                     }
+                                </td>
+                                <td>
+                                    <a asp-action="DetalhesUsuario" asp-route-id="@usuario.Id" class="btn btn-info btn-sm">Detalhes</a>
+                                    <a asp-action="EditarUsuario" asp-route-id="@usuario.Id" class="btn btn-warning btn-sm">Editar</a>
+                                    <a asp-action="ExcluirUsuario" asp-route-id="@usuario.Id" class="btn btn-danger btn-sm">Excluir</a>
                                 </td>
                             </tr>
                         }

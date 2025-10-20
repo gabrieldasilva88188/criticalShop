@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\criticalShop\\CriticalShop\\CriticalShop.csproj": {}
+    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\criticalShop\\CriticalShop\\CriticalShop.csproj": {
+    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\criticalShop\\CriticalShop\\CriticalShop.csproj",
+        "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj",
         "projectName": "CriticalShop",
-        "projectPath": "D:\\Documentos\\criticalShop\\CriticalShop\\CriticalShop.csproj",
-        "packagesPath": "C:\\Users\\Giovanni\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\criticalShop\\CriticalShop\\obj\\",
+        "projectPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj",
+        "packagesPath": "C:\\Users\\Nefalem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Giovanni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nefalem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -80,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

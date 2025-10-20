@@ -540,3 +540,182 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+/* ----------------- CALCULADORA DE FRETE ----------------- */
+.frete-calculator {
+    background: #fff;
+    border: 2px solid #FF7315;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.frete-calculator h4 {
+    color: #232020;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.frete-calculator h4 i {
+    color: #FF7315;
+}
+
+.frete-input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.frete-input-group input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.frete-input-group input:focus {
+    outline: none;
+    border-color: #FF7315;
+    box-shadow: 0 0 0 3px rgba(255, 115, 21, 0.1);
+}
+
+.btn-calcular-frete {
+    width: 50px;
+    background: #FF7315;
+    color: white;
+    border: none;
+    padding: 0.75rem 0.55rem;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.btn-calcular-frete:hover {
+    background: #e66310;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 115, 21, 0.3);
+
+}
+
+.btn-calcular-frete:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.frete-resultado {
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.frete-endereco {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.frete-endereco p {
+    margin: 0;
+    color: #232020;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.frete-endereco i {
+    color: #FF7315;
+}
+
+.frete-opcoes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.frete-opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.frete-opcao:hover {
+    border-color: #FF7315;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.frete-opcao.selecionado {
+    border-color: #FF7315;
+    background: rgba(255, 115, 21, 0.05);
+    box-shadow: 0 4px 12px rgba(255, 115, 21, 0.2);
+}
+
+.frete-opcao-info {
+    flex: 1;
+}
+
+.frete-opcao-info strong {
+    display: block;
+    color: #232020;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.frete-opcao-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.frete-opcao-info small {
+    display: block;
+    color: #999;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.frete-opcao-valor {
+    text-align: right;
+    padding-left: 1rem;
+}
+
+.frete-opcao-valor strong {
+    color: #FF7315;
+    font-size: 1.3rem;
+}
+
+#frete-erro {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -24,7 +24,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Serviços customizados
 builder.Services.AddScoped<CriticalShop.Services.AuthService>();
+builder.Services.AddScoped<CriticalShop.Services.FreteService>();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient(); // Para chamadas HTTP (ViaCEP)
 
 var app = builder.Build();
 

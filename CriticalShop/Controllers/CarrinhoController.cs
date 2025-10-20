@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CriticalShop.Models;
 using CriticalShop.Data;
+using CriticalShop.Services;
 
 namespace CriticalShop.Controllers
 {
@@ -9,11 +10,13 @@ namespace CriticalShop.Controllers
     {
         private readonly AppDbContext _context;
         private readonly ILogger<CarrinhoController> _logger;
+        private readonly FreteService _freteService;
 
-        public CarrinhoController(AppDbContext context, ILogger<CarrinhoController> logger)
+        public CarrinhoController(AppDbContext context, ILogger<CarrinhoController> logger, FreteService freteService)
         {
             _context = context;
             _logger = logger;
+            _freteService = freteService;
         }
 
         public class AddToCartRequest
@@ -226,6 +229,57 @@ namespace CriticalShop.Controllers
             var carrinho = await ObterCarrinhoAsync(sessionId);
             
             return Json(new { totalItens = carrinho?.TotalItens ?? 0 });
+        }
+
+        // POST: Carrinho/CalcularFrete
+        [HttpPost]
+        public async Task<IActionResult> CalcularFrete([FromBody] FreteRequest request)
+        {
+            try
+            {
+                if (!_freteService.ValidarCep(request.CepDestino))
+                {
+                    return Json(new { sucesso = false, mensagem = "CEP inválido" });
+                }
+
+                var sessionId = GetOrCreateSessionId();
+                var carrinho = await ObterCarrinhoAsync(sessionId);
+
+                if (carrinho == null || !carrinho.Itens.Any())
+                {
+                    return Json(new { sucesso = false, mensagem = "Carrinho vazio" });
+                }
+
+                var resultado = await _freteService.CalcularFreteAsync(request.CepDestino, carrinho.Itens.ToList());
+
+                if (!resultado.Sucesso)
+                {
+                    return Json(new { sucesso = false, mensagem = resultado.Mensagem });
+                }
+
+                return Json(new
+                {
+                    sucesso = true,
+                    mensagem = resultado.Mensagem,
+                    cepDestino = resultado.CepDestino,
+                    cidade = resultado.Cidade,
+                    estado = resultado.Estado,
+                    opcoes = resultado.Opcoes.Select(o => new
+                    {
+                        servico = o.Servico,
+                        nome = o.Nome,
+                        valor = o.Valor,
+                        valorFormatado = o.Valor.ToString("C"),
+                        prazoEntrega = o.PrazoEntrega,
+                        observacao = o.Observacao
+                    })
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao calcular frete");
+                return Json(new { sucesso = false, mensagem = "Erro ao calcular frete. Tente novamente." });
+            }
         }
 
         // Métodos auxiliares

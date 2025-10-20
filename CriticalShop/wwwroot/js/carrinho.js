@@ -275,6 +275,145 @@ function atualizarContadorCarrinho() {
 }
 
 // ==============================================
+// CÁLCULO DE FRETE
+// ==============================================
+
+let freteSelecionado = null;
+
+function calcularFrete() {
+    const cepInput = document.getElementById('cep-input');
+    const cep = cepInput.value.replace(/\D/g, '');
+    
+    if (cep.length !== 8) {
+        mostrarErroFrete('Por favor, digite um CEP válido com 8 dígitos');
+        return;
+    }
+    
+    // Mostrar loading
+    const btnCalcular = document.querySelector('.btn-calcular-frete');
+    const originalText = btnCalcular.innerHTML;
+    btnCalcular.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Calculando...';
+    btnCalcular.disabled = true;
+    
+    // Limpar resultados anteriores
+    document.getElementById('frete-resultado').style.display = 'none';
+    document.getElementById('frete-erro').style.display = 'none';
+    
+    fetch('/Carrinho/CalcularFrete', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            cepDestino: cep
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        btnCalcular.innerHTML = originalText;
+        btnCalcular.disabled = false;
+        
+        if (data.sucesso) {
+            mostrarResultadoFrete(data);
+        } else {
+            mostrarErroFrete(data.mensagem);
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        btnCalcular.innerHTML = originalText;
+        btnCalcular.disabled = false;
+        mostrarErroFrete('Erro ao calcular frete. Tente novamente.');
+    });
+}
+
+function mostrarResultadoFrete(data) {
+    const freteResultado = document.getElementById('frete-resultado');
+    const freteEndereco = document.getElementById('frete-endereco');
+    const freteOpcoes = document.getElementById('frete-opcoes');
+    
+    // Mostrar endereço
+    freteEndereco.innerHTML = `
+        <p><i class="fas fa-map-marker-alt"></i> ${data.cidade} - ${data.estado}</p>
+    `;
+    
+    // Mostrar opções de frete
+    let opcoesHtml = '<div class="frete-opcoes-list">';
+    data.opcoes.forEach(opcao => {
+        opcoesHtml += `
+            <div class="frete-opcao" onclick="selecionarFrete('${opcao.servico}', ${opcao.valor}, '${opcao.valorFormatado}', '${opcao.nome}', ${opcao.prazoEntrega})">
+                <div class="frete-opcao-info">
+                    <strong>${opcao.nome}</strong>
+                    <p>${opcao.observacao}</p>
+                    <small>Entrega em até ${opcao.prazoEntrega} dias úteis</small>
+                </div>
+                <div class="frete-opcao-valor">
+                    <strong>${opcao.valorFormatado}</strong>
+                </div>
+            </div>
+        `;
+    });
+    opcoesHtml += '</div>';
+    
+    freteOpcoes.innerHTML = opcoesHtml;
+    freteResultado.style.display = 'block';
+}
+
+function mostrarErroFrete(mensagem) {
+    const freteErro = document.getElementById('frete-erro');
+    freteErro.textContent = mensagem;
+    freteErro.style.display = 'block';
+}
+
+function selecionarFrete(servico, valor, valorFormatado, nome, prazo) {
+    freteSelecionado = { servico, valor, valorFormatado, nome, prazo };
+    
+    // Destacar opção selecionada
+    document.querySelectorAll('.frete-opcao').forEach(opcao => {
+        opcao.classList.remove('selecionado');
+    });
+    event.currentTarget.classList.add('selecionado');
+    
+    // Atualizar resumo do pedido
+    const freteRow = document.getElementById('frete-selecionado-row');
+    const freteValor = document.getElementById('frete-valor');
+    const totalFinal = document.getElementById('total-final');
+    
+    freteRow.style.display = 'flex';
+    freteValor.textContent = valorFormatado;
+    
+    // Calcular novo total
+    const subtotalText = document.getElementById('total-final').textContent;
+    const subtotal = parseFloat(subtotalText.replace(/[^\d,]/g, '').replace(',', '.'));
+    const novoTotal = subtotal + valor;
+    
+    totalFinal.innerHTML = `<strong>${novoTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</strong>`;
+    
+    mostrarNotificacao(`Frete ${nome} selecionado!`, 'success');
+}
+
+// Máscara de CEP
+document.addEventListener('DOMContentLoaded', function() {
+    const cepInput = document.getElementById('cep-input');
+    if (cepInput) {
+        cepInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 5) {
+                value = value.substring(0, 5) + '-' + value.substring(5, 8);
+            }
+            e.target.value = value;
+        });
+        
+        // Permitir calcular com Enter
+        cepInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                calcularFrete();
+            }
+        });
+    }
+});
+
+// ==============================================
 // SISTEMA DE NOTIFICAÇÕES
 // ==============================================
 

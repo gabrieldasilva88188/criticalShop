@@ -229,5 +229,377 @@ namespace CriticalShop.Controllers
                 return View();
             }
         }
+
+        // GET: Detalhes do Usuario
+        public async Task<IActionResult> DetalhesUsuario(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            try
+            {
+                var usuario = await _context.Usuarios
+                    .Include(u => u.Carrinhos)
+                    .Include(u => u.Avaliacoes)
+                    .FirstOrDefaultAsync(u => u.Id == id);
+
+                if (usuario == null)
+                {
+                    TempData["ErrorMessage"] = "Usuário não encontrado.";
+                    return RedirectToAction("Usuarios");
+                }
+
+                return View(usuario);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar detalhes do usuário");
+                TempData["ErrorMessage"] = "Erro ao carregar detalhes do usuário.";
+                return RedirectToAction("Usuarios");
+            }
+        }
+
+        // GET: Editar Usuario
+        public async Task<IActionResult> EditarUsuario(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            try
+            {
+                var usuario = await _context.Usuarios.FindAsync(id);
+                if (usuario == null)
+                {
+                    TempData["ErrorMessage"] = "Usuário não encontrado.";
+                    return RedirectToAction("Usuarios");
+                }
+
+                return View(usuario);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar usuário para edição");
+                TempData["ErrorMessage"] = "Erro ao carregar usuário.";
+                return RedirectToAction("Usuarios");
+            }
+        }
+
+        // POST: Editar Usuario
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarUsuario(int id, Usuario usuario)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (id != usuario.Id)
+            {
+                TempData["ErrorMessage"] = "ID inválido.";
+                return RedirectToAction("Usuarios");
+            }
+
+            try
+            {
+                // Remover validação de propriedades de navegação
+                ModelState.Remove("Carrinhos");
+                ModelState.Remove("Avaliacoes");
+
+                if (ModelState.IsValid)
+                {
+                    _context.Update(usuario);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Usuário atualizado com sucesso!";
+                    return RedirectToAction("Usuarios");
+                }
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Usuarios.Any(u => u.Id == id))
+                {
+                    TempData["ErrorMessage"] = "Usuário não encontrado.";
+                    return RedirectToAction("Usuarios");
+                }
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao atualizar usuário");
+                TempData["ErrorMessage"] = "Erro ao atualizar usuário.";
+            }
+
+            return View(usuario);
+        }
+
+        // GET: Excluir Usuario
+        public async Task<IActionResult> ExcluirUsuario(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            try
+            {
+                var usuario = await _context.Usuarios
+                    .Include(u => u.Carrinhos)
+                    .Include(u => u.Avaliacoes)
+                    .FirstOrDefaultAsync(u => u.Id == id);
+
+                if (usuario == null)
+                {
+                    TempData["ErrorMessage"] = "Usuário não encontrado.";
+                    return RedirectToAction("Usuarios");
+                }
+
+                return View(usuario);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar usuário para exclusão");
+                TempData["ErrorMessage"] = "Erro ao carregar usuário.";
+                return RedirectToAction("Usuarios");
+            }
+        }
+
+        // POST: Excluir Usuario
+        [HttpPost, ActionName("ExcluirUsuario")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ExcluirUsuarioConfirmado(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            try
+            {
+                var usuario = await _context.Usuarios.FindAsync(id);
+                if (usuario != null)
+                {
+                    _context.Usuarios.Remove(usuario);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Usuário excluído com sucesso!";
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Usuário não encontrado.";
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao excluir usuário");
+                TempData["ErrorMessage"] = "Erro ao excluir usuário. Verifique se há dados relacionados.";
+            }
+
+            return RedirectToAction("Usuarios");
+        }
+
+        // GET: Detalhes do Admin
+        public async Task<IActionResult> DetalhesAdmin(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (!_authService.IsSuperAdmin())
+            {
+                TempData["ErrorMessage"] = "Apenas super administradores podem visualizar detalhes de admins.";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var admin = await _context.Admins.FindAsync(id);
+                if (admin == null)
+                {
+                    TempData["ErrorMessage"] = "Administrador não encontrado.";
+                    return RedirectToAction("Admins");
+                }
+
+                return View(admin);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar detalhes do admin");
+                TempData["ErrorMessage"] = "Erro ao carregar detalhes do administrador.";
+                return RedirectToAction("Admins");
+            }
+        }
+
+        // GET: Editar Admin
+        public async Task<IActionResult> EditarAdmin(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (!_authService.IsSuperAdmin())
+            {
+                TempData["ErrorMessage"] = "Apenas super administradores podem editar admins.";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var admin = await _context.Admins.FindAsync(id);
+                if (admin == null)
+                {
+                    TempData["ErrorMessage"] = "Administrador não encontrado.";
+                    return RedirectToAction("Admins");
+                }
+
+                return View(admin);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar admin para edição");
+                TempData["ErrorMessage"] = "Erro ao carregar administrador.";
+                return RedirectToAction("Admins");
+            }
+        }
+
+        // POST: Editar Admin
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditarAdmin(int id, Admin admin)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (!_authService.IsSuperAdmin())
+            {
+                TempData["ErrorMessage"] = "Apenas super administradores podem editar admins.";
+                return RedirectToAction("Index");
+            }
+
+            if (id != admin.Id)
+            {
+                TempData["ErrorMessage"] = "ID inválido.";
+                return RedirectToAction("Admins");
+            }
+
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _context.Update(admin);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Administrador atualizado com sucesso!";
+                    return RedirectToAction("Admins");
+                }
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Admins.Any(a => a.Id == id))
+                {
+                    TempData["ErrorMessage"] = "Administrador não encontrado.";
+                    return RedirectToAction("Admins");
+                }
+                throw;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao atualizar admin");
+                TempData["ErrorMessage"] = "Erro ao atualizar administrador.";
+            }
+
+            return View(admin);
+        }
+
+        // GET: Excluir Admin
+        public async Task<IActionResult> ExcluirAdmin(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (!_authService.IsSuperAdmin())
+            {
+                TempData["ErrorMessage"] = "Apenas super administradores podem excluir admins.";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var admin = await _context.Admins.FindAsync(id);
+                if (admin == null)
+                {
+                    TempData["ErrorMessage"] = "Administrador não encontrado.";
+                    return RedirectToAction("Admins");
+                }
+
+                // Não permitir excluir a si mesmo
+                if (admin.Id == _authService.GetAdminId())
+                {
+                    TempData["ErrorMessage"] = "Você não pode excluir sua própria conta.";
+                    return RedirectToAction("Admins");
+                }
+
+                return View(admin);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao carregar admin para exclusão");
+                TempData["ErrorMessage"] = "Erro ao carregar administrador.";
+                return RedirectToAction("Admins");
+            }
+        }
+
+        // POST: Excluir Admin
+        [HttpPost, ActionName("ExcluirAdmin")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ExcluirAdminConfirmado(int id)
+        {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
+            if (!_authService.IsSuperAdmin())
+            {
+                TempData["ErrorMessage"] = "Apenas super administradores podem excluir admins.";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var admin = await _context.Admins.FindAsync(id);
+                if (admin != null)
+                {
+                    // Não permitir excluir a si mesmo
+                    if (admin.Id == _authService.GetAdminId())
+                    {
+                        TempData["ErrorMessage"] = "Você não pode excluir sua própria conta.";
+                        return RedirectToAction("Admins");
+                    }
+
+                    _context.Admins.Remove(admin);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Administrador excluído com sucesso!";
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Administrador não encontrado.";
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro ao excluir admin");
+                TempData["ErrorMessage"] = "Erro ao excluir administrador.";
+            }
+
+            return RedirectToAction("Admins");
+        }
     }
 }

@@ -17,133 +17,157 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CriticalShop
 build_property.RootNamespace = CriticalShop
-build_property.ProjectDir = D:\Documentos\criticalShop\CriticalShop\
+build_property.ProjectDir = C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Documentos\criticalShop\CriticalShop
+build_property.MSBuildProjectDirectory = C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Auth/CadastroAdmin.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Auth/CadastroAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDYWRhc3Ryb0FkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Auth/CadastroUsuario.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Auth/CadastroUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDYWRhc3Ryb1VzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Auth/LoginAdmin.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Auth/LoginAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbkFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Auth/LoginUsuario.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Auth/LoginUsuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpblVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Campanha/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Campanha/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuaGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Carrinho/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Carrinho/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Categoria/Create.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Categoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Categoria/Delete.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Categoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Categoria/Details.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Categoria/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Categoria/Edit.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Categoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Categoria/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Home/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Home/Privacy.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Home/_ProdutoCard.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Home/_ProdutoCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUHJvZHV0b0NhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Admins.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Admins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cQWRtaW5zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Carrinhos.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Carrinhos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cQ2FycmluaG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Categorias.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Categorias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cQ2F0ZWdvcmlhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Estatisticas.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/DetalhesAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRGV0YWxoZXNBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/DetalhesUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRGV0YWxoZXNVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/EditarAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRWRpdGFyQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRWRpdGFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Estatisticas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRXN0YXRpc3RpY2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/ExcluirAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRXhjbHVpckFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/ExcluirUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cRXhjbHVpclVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Produtos.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Produtos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cUHJvZHV0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/HubAdministrativo/Usuarios.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/HubAdministrativo/Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHViQWRtaW5pc3RyYXRpdm9cVXN1YXJpb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Produto/Create.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Produto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Produto/Delete.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Produto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Produto/Details.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Produto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Produto/Edit.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Produto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Produto/Index.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Shared/Footer.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Shared/Header.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Shared/Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/Shared/Layout.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/Shared/Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documentos/criticalShop/CriticalShop/Views/_ViewImports.cshtml]
+[C:/Users/Nefalem/Desktop/Critical Shop/Ultima Versao/criticalShop/criticalshop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Cadastro de Administrador";
 }
-
+<link rel="stylesheet" href="@Url.Content("~/css/login/CadastroAdmin.css")">
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -22,21 +22,21 @@
                     }
 
                     <form asp-action="CadastroAdmin" method="post">
-                        <div class="mb-3">
+                        <div class="mb-3 form-group-icon name">
                             <label asp-for="Nome" class="form-label"></label>
-                            <input asp-for="Nome" class="form-control" />
+                            <input asp-for="Nome" class="form-control" placeholder="Digite seu nome completo" />
                             <span asp-validation-for="Nome" class="text-danger"></span>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group-icon email">
                             <label asp-for="Email" class="form-label"></label>
-                            <input asp-for="Email" class="form-control" />
+                            <input asp-for="Email" class="form-control" placeholder="seu@email.com" />
                             <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group-icon password">
                             <label asp-for="Senha" class="form-label"></label>
-                            <input asp-for="Senha" type="password" class="form-control" />
+                            <input asp-for="Senha" type="password" class="form-control" placeholder="Crie uma senha segura" />
                             <span asp-validation-for="Senha" class="text-danger"></span>
                         </div>
 
@@ -46,7 +46,9 @@
                     </form>
                 </div>
                 <div class="card-footer text-center">
-                    <a asp-controller="HubAdministrativo" asp-action="Index" class="btn btn-link">Voltar ao Hub</a>
+                    <a asp-controller="HubAdministrativo" asp-action="Index" class="btn btn-link">
+                        <i class="fas fa-arrow-left"></i> Voltar ao Hub
+                    </a>
                 </div>
             </div>
         </div>

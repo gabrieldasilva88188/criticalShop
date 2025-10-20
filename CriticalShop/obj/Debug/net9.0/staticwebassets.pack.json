@@ -1,315 +1,327 @@
 {
   "Files": [
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\CadastroUsuario\\CadastroUser.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\CadastroUsuario\\CadastroUser.css",
       "PackagePath": "staticwebassets\\css\\CadastroUsuario\\CadastroUser.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\Carrinho\\style.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\Carrinho\\style.css",
       "PackagePath": "staticwebassets\\css\\Carrinho\\style.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\Desconto\\styleDesconto.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\Desconto\\styleDesconto.css",
       "PackagePath": "staticwebassets\\css\\Desconto\\styleDesconto.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\style.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\HubAdmin\\Hub.css",
+      "PackagePath": "staticwebassets\\css\\HubAdmin\\Hub.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\style.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\style.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleCreate.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\styleCreate.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleDelete.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\styleDelete.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleDetails.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\styleDetails.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\crudProdutos\\styleEdit.css",
       "PackagePath": "staticwebassets\\css\\crudProdutos\\styleEdit.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\header.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\login\\loginuser",
-      "PackagePath": "staticwebassets\\css\\login"
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\login\\CadastroAdmin.css",
+      "PackagePath": "staticwebassets\\css\\login\\CadastroAdmin.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\login\\CadastroUser.css",
+      "PackagePath": "staticwebassets\\css\\login\\CadastroUser.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\login\\loginuser.css",
+      "PackagePath": "staticwebassets\\css\\login\\loginuser.css"
+    },
+    {
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\images\\desconto50Off.png",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\images\\desconto50Off.png",
       "PackagePath": "staticwebassets\\images\\desconto50Off.png"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\images\\guiaCoc.png",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\images\\guiaCoc.png",
       "PackagePath": "staticwebassets\\images\\guiaCoc.png"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\images\\hero-bg.jpg",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\images\\hero-bg.jpg",
       "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\js\\carrinho.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\js\\carrinho.js",
       "PackagePath": "staticwebassets\\js\\carrinho.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "D:\\Documentos\\criticalShop\\CriticalShop\\wwwroot\\uploads\\testeIMG.png",
+      "Id": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\wwwroot\\uploads\\testeIMG.png",
       "PackagePath": "staticwebassets\\uploads\\testeIMG.png"
     },
     {

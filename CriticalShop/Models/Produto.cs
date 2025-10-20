@@ -20,6 +20,22 @@ namespace CriticalShop.Models
         [Display(Name = "Imagem do Produto")]
         public string? Img { get; set; }
         
+        // Informações para cálculo de frete
+        [Display(Name = "Peso (kg)")]
+        [Range(0.01, 30, ErrorMessage = "O peso deve estar entre 0.01 e 30 kg")]
+        public double Peso { get; set; } = 0.5; // Peso padrão 500g
+        
+        [Display(Name = "Altura (cm)")]
+        [Range(2, 105, ErrorMessage = "A altura deve estar entre 2 e 105 cm")]
+        public int Altura { get; set; } = 10; // Altura padrão 10cm
+        
+        [Display(Name = "Largura (cm)")]
+        [Range(11, 105, ErrorMessage = "A largura deve estar entre 11 e 105 cm")]
+        public int Largura { get; set; } = 15; // Largura padrão 15cm
+        
+        [Display(Name = "Comprimento (cm)")]
+        [Range(16, 105, ErrorMessage = "O comprimento deve estar entre 16 e 105 cm")]
+        public int Comprimento { get; set; } = 20; // Comprimento padrão 20cm
 
         // Relacionamentos
         [Required(ErrorMessage = "A categoria é obrigatória")]
