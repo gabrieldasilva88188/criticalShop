@@ -3,6 +3,7 @@ using System;
 using CriticalShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CriticalShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251020015656_AdicionarSistemaAutenticacao")]
+    partial class AdicionarSistemaAutenticacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.8");
@@ -70,11 +73,16 @@ namespace CriticalShop.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProdutoId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Avaliacoes");
                 });
@@ -99,9 +107,14 @@ namespace CriticalShop.Migrations
                     b.Property<int?>("UsuarioId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("UsuarioId1")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UsuarioId");
+
+                    b.HasIndex("UsuarioId1");
 
                     b.ToTable("Carrinhos");
                 });
@@ -284,10 +297,14 @@ namespace CriticalShop.Migrations
                         .IsRequired();
 
                     b.HasOne("CriticalShop.Models.Usuario", "Usuario")
-                        .WithMany("Avaliacoes")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("CriticalShop.Models.Usuario", null)
+                        .WithMany("Avaliacoes")
+                        .HasForeignKey("UsuarioId");
 
                     b.Navigation("Produto");
 
@@ -297,9 +314,13 @@ namespace CriticalShop.Migrations
             modelBuilder.Entity("CriticalShop.Models.Carrinho", b =>
                 {
                     b.HasOne("CriticalShop.Models.Usuario", "Usuario")
-                        .WithMany("Carrinhos")
+                        .WithMany()
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("CriticalShop.Models.Usuario", null)
+                        .WithMany("Carrinhos")
+                        .HasForeignKey("UsuarioId1");
 
                     b.Navigation("Usuario");
                 });

@@ -15,7 +15,8 @@
         </nav>
         <div class="user-actions">
             <a asp-controller="Carrinho" asp-action="Index" class="cart-btn"><i class="fas fa-shopping-cart"></i> Carrinho (0)</a>
-            <a href="#" class="login-btn"><i class="fas fa-user"></i> Login</a>
+            <a asp-controller="Auth" asp-action="LoginUsuario" class="login-btn"><i class="fas fa-user"></i> Login Usuário</a>
+            <a asp-controller="Auth" asp-action="LoginAdmin" class="login-btn"><i class="fas fa-cog"></i> Login Admin</a>
         </div>
     </div>
 </header>

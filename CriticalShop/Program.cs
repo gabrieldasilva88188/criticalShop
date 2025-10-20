@@ -22,6 +22,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
+// Serviços customizados
+builder.Services.AddScoped<CriticalShop.Services.AuthService>();
+builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
 
 // ==============================================

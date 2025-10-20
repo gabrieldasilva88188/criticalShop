@@ -1,0 +1,74 @@
+@model IEnumerable<CriticalShop.Models.Admin>
+
+@{
+    ViewData["Title"] = "Gerenciar Administradores";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Gerenciar Administradores</h2>
+                <div>
+                    <a asp-controller="Auth" asp-action="CadastroAdmin" class="btn btn-success">Novo Admin</a>
+                    <a asp-action="Index" class="btn btn-secondary">Voltar ao Hub</a>
+                </div>
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+            }
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+            }
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Data Cadastro</th>
+                            <th>Super Admin</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var admin in Model)
+                        {
+                            <tr>
+                                <td>@admin.Id</td>
+                                <td>@admin.Nome</td>
+                                <td>@admin.Email</td>
+                                <td>@admin.DataCadastro.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    @if (admin.IsSuperAdmin)
+                                    {
+                                        <span class="badge bg-warning">Super Admin</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-info">Admin</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (admin.Ativo)
+                                    {
+                                        <span class="badge bg-success">Ativo</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Inativo</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

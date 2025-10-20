@@ -13,6 +13,7 @@ namespace CriticalShop.Data
         public DbSet<Desconto> Descontos { get; set; }
         public DbSet<Avaliacao> Avaliacoes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Carrinho> Carrinhos { get; set; }
         public DbSet<ItemCarrinho> ItensCarrinho { get; set; }
         
@@ -57,7 +58,7 @@ namespace CriticalShop.Data
             // Relacionamento Avaliação - Usuario
             modelBuilder.Entity<Avaliacao>()
                 .HasOne(a => a.Usuario)
-                .WithMany()
+                .WithMany(u => u.Avaliacoes)
                 .HasForeignKey(a => a.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
@@ -78,10 +79,46 @@ namespace CriticalShop.Data
                 .IsRequired()
                 .HasMaxLength(50);
 
+            // Configurações para Admin
+            modelBuilder.Entity<Admin>()
+                .Property(a => a.Email)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Admin>()
+                .Property(a => a.Senha)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Admin>()
+                .Property(a => a.Nome)
+                .HasMaxLength(100);
+
+            // Configurações para Usuario
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Nome)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Email)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Senha)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Usuario>()
+                .Property(u => u.Cpf)
+                .IsRequired()
+                .HasMaxLength(14);
+
             // Relacionamento Carrinho - Usuario
             modelBuilder.Entity<Carrinho>()
                 .HasOne(c => c.Usuario)
-                .WithMany()
+                .WithMany(u => u.Carrinhos)
                 .HasForeignKey(c => c.UsuarioId)
                 .OnDelete(DeleteBehavior.SetNull);
 
@@ -118,3 +155,6 @@ namespace CriticalShop.Data
         }
     }
 }
+
+// dotnet ef migrations add SeedProducts
+// dotnet ef database update

@@ -1,0 +1,134 @@
+@{
+    ViewData["Title"] = "Estatísticas";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Estatísticas do Sistema</h2>
+                <div>
+                    <a asp-action="Index" class="btn btn-secondary">Voltar ao Hub</a>
+                </div>
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+            }
+
+            <!-- Cards de Estatísticas Gerais -->
+            <div class="row mb-4">
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalProdutos</h5>
+                            <p class="card-text">Total de Produtos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalCategorias</h5>
+                            <p class="card-text">Total de Categorias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalUsuarios</h5>
+                            <p class="card-text">Total de Usuários</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalAdmins</h5>
+                            <p class="card-text">Total de Admins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalCarrinhos</h5>
+                            <p class="card-text">Total de Carrinhos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@ViewBag.TotalItensCarrinho</h5>
+                            <p class="card-text">Itens em Carrinhos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estatísticas de Status -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Usuários Ativos</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-success">@ViewBag.UsuariosAtivos</h3>
+                            <p class="text-muted">Usuários ativos no sistema</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Administradores Ativos</h5>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-primary">@ViewBag.AdminsAtivos</h3>
+                            <p class="text-muted">Administradores ativos no sistema</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produtos por Categoria -->
+            @if (ViewBag.ProdutosPorCategoria != null)
+            {
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Produtos por Categoria</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Categoria</th>
+                                                <th>Quantidade de Produtos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in ViewBag.ProdutosPorCategoria)
+                                            {
+                                                <tr>
+                                                    <td>@item.Categoria</td>
+                                                    <td>@item.Quantidade</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

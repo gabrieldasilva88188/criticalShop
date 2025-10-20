@@ -38,6 +38,23 @@ namespace CriticalShop.Data
                 context.Descontos.AddRange(descontos);
                 context.SaveChanges();
             }
+
+            // Verificar se já existe o admin padrão
+            if (!context.Admins.Any())
+            {
+                var adminPadrao = new Admin
+                {
+                    Email = "admin",
+                    Senha = "admin123", // Em produção, isso deveria ser hasheado
+                    Nome = "Administrador",
+                    IsSuperAdmin = true,
+                    Ativo = true,
+                    DataCadastro = DateTime.Now
+                };
+
+                context.Admins.Add(adminPadrao);
+                context.SaveChanges();
+            }
         }
     }
 }
