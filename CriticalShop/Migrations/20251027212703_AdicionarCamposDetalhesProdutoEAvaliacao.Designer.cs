@@ -3,6 +3,7 @@ using System;
 using CriticalShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CriticalShop.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251027212703_AdicionarCamposDetalhesProdutoEAvaliacao")]
+    partial class AdicionarCamposDetalhesProdutoEAvaliacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.8");
@@ -183,13 +186,13 @@ namespace CriticalShop.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("Altura")
+                    b.Property<int>("Altura")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("CategoriaId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("Comprimento")
+                    b.Property<int>("Comprimento")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Conteudo")
@@ -206,7 +209,7 @@ namespace CriticalShop.Migrations
                     b.Property<string>("Img")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("Largura")
+                    b.Property<int>("Largura")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Material")
@@ -218,7 +221,7 @@ namespace CriticalShop.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<double?>("Peso")
+                    b.Property<double>("Peso")
                         .HasColumnType("REAL");
 
                     b.Property<double>("Preco")

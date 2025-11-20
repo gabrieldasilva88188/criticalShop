@@ -39,10 +39,17 @@ namespace CriticalShop.Services
 
             if (usuario != null)
             {
+                // Log para depuração
+                Console.WriteLine($"Usuário logado: {usuario.Nome}, Email: {usuario.Email}");
+                
                 // Armazenar na sessão
                 _httpContextAccessor.HttpContext?.Session.SetString("UsuarioId", usuario.Id.ToString());
                 _httpContextAccessor.HttpContext?.Session.SetString("UsuarioEmail", usuario.Email);
                 _httpContextAccessor.HttpContext?.Session.SetString("UsuarioNome", usuario.Nome);
+
+                // Verificar se a sessão foi definida
+                var nomeArmazenado = _httpContextAccessor.HttpContext?.Session.GetString("UsuarioNome");
+                Console.WriteLine($"Nome armazenado na sessão: {nomeArmazenado}");
             }
 
             return usuario;

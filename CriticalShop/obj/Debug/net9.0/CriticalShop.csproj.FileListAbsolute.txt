@@ -824,7 +824,6 @@ C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\o
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.sourcelink.json
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\scopedcss\bundle\CriticalShop.styles.css
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\hqzzbyz2sf-5ipweew5fc.gz
-C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\c5r6dd7b84-n14f3ytm16.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\jqiecebxh7-ln6gv1x77s.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\y0nsg8d9p0-h2xo43dmc3.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\b4g68vvs7j-w60pjajuz3.gz
@@ -838,7 +837,6 @@ C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\o
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\lfqj43jouq-wd3ipj7ner.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\6be0sxn1sm-34ydmceia4.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\fknjnvxntt-61n19gt1b8.gz
-C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\gw0vihv0l1-8tt1bsc9yn.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\su3pau15e8-3z195o97ol.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\79tjwfafnd-t1cqhe9u97.gz
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\compressed\2d04zzlrk7-c2jlpeoesf.gz
@@ -914,3 +912,5 @@ C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\o
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.pdb
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\CriticalShop.genruntimeconfig.cache
 C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\criticalshop\obj\Debug\net9.0\ref\CriticalShop.dll
+C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\c5r6dd7b84-7c18y5prp3.gz
+C:\Users\Nefalem\Desktop\Critical Shop\Ultima Versao\criticalShop\CriticalShop\obj\Debug\net9.0\compressed\gw0vihv0l1-vftd0g8c6j.gz

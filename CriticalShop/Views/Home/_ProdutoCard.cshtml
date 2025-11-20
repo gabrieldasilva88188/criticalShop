@@ -3,21 +3,25 @@
 <link rel="stylesheet" href="@Url.Content("~/css/Desconto/styleDesconto.css")">
 
 <div class="product-card">
-    <div class="product-image">
-        @if (!string.IsNullOrEmpty(Model.Img))
-        {
-            <img src="@Model.Img" alt="@Model.Nome">
-        }
-        else
-        {
-            <div class="no-image">
-                <i class="fas fa-image"></i>
-                <span>Sem imagem</span>
-            </div>
-        }
-    </div>
+    <a asp-controller="Home" asp-action="DetalhesProduto" asp-route-id="@Model.Id" style="text-decoration: none; color: inherit;">
+        <div class="product-image">
+            @if (!string.IsNullOrEmpty(Model.Img))
+            {
+                <img src="@Model.Img" alt="@Model.Nome">
+            }
+            else
+            {
+                <div class="no-image">
+                    <i class="fas fa-image"></i>
+                    <span>Sem imagem</span>
+                </div>
+            }
+        </div>
+    </a>
     <div class="product-info">
-        <h3>@Model.Nome</h3>
+        <a asp-controller="Home" asp-action="DetalhesProduto" asp-route-id="@Model.Id" style="text-decoration: none; color: inherit;">
+            <h3>@Model.Nome</h3>
+        </a>
         <span class="product-category">@Model.Categoria?.Nome</span>
         
         @{

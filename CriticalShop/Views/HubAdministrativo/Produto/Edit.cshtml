@@ -97,8 +97,69 @@
                             </div>
                         }
 
+                        <!-- Descrição e Informações Adicionais -->
+                        <div class="mb-3">
+                            <label asp-for="Descricao" class="form-label">Descrição Detalhada</label>
+                            <textarea asp-for="Descricao" class="form-control" rows="6" placeholder="Descrição completa do produto para os clientes..."></textarea>
+                            <div class="form-text">Descreva o produto de forma detalhada e atrativa</div>
+                            <span asp-validation-for="Descricao" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Material" class="form-label">Material</label>
+                                    <input asp-for="Material" class="form-control" placeholder="Ex: MDF 3mm, Resina, Plástico..." />
+                                    <span asp-validation-for="Material" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Conteudo" class="form-label">Quantidade/Conteúdo</label>
+                                    <input asp-for="Conteudo" class="form-control" placeholder="Ex: 10 bases, 1 unidade..." />
+                                    <span asp-validation-for="Conteudo" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dimensões para Frete -->
+                        <h5 class="mt-4 mb-3">Dimensões (para cálculo de frete)</h5>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> Deixe em branco ou com valor 0 se não se aplicar (ex: tintas, líquidos)
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label asp-for="Peso" class="form-label">Peso (kg)</label>
+                                    <input asp-for="Peso" class="form-control" type="number" step="0.01" min="0" placeholder="0.5" />
+                                    <span asp-validation-for="Peso" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label asp-for="Altura" class="form-label">Altura (cm)</label>
+                                    <input asp-for="Altura" class="form-control" type="number" min="0" placeholder="10" />
+                                    <span asp-validation-for="Altura" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label asp-for="Largura" class="form-label">Largura (cm)</label>
+                                    <input asp-for="Largura" class="form-control" type="number" min="0" placeholder="15" />
+                                    <span asp-validation-for="Largura" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label asp-for="Comprimento" class="form-label">Comprimento (cm)</label>
+                                    <input asp-for="Comprimento" class="form-control" type="number" min="0" placeholder="20" />
+                                    <span asp-validation-for="Comprimento" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="d-flex justify-content-between">
-                            <a asp-action="Index" class="btn btn-secondary">
+                            <a asp-action="Produtos" class="btn btn-secondary">
                                 <i class="fas fa-arrow-left"></i> Voltar
                             </a>
                             <button type="submit" class="btn btn-warning">

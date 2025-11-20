@@ -87,14 +87,14 @@
 
                         <!-- Botões de Ação -->
                         <div class="d-flex justify-content-between mt-4">
-                            <a asp-action="Index" class="btn btn-secondary">
+                            <a asp-action="Categorias" class="btn btn-secondary">
                                 <i class="fas fa-arrow-left"></i> Voltar à Lista
                             </a>
                             <div class="btn-group">
-                                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                                <a asp-action="EditarCategoria" asp-route-id="@Model.Id" class="btn btn-warning">
                                     <i class="fas fa-edit"></i> Editar
                                 </a>
-                                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">
+                                <a asp-action="ExcluirCategoria" asp-route-id="@Model.Id" class="btn btn-danger">
                                     <i class="fas fa-trash"></i> Excluir
                                 </a>
                             </div>

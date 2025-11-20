@@ -154,7 +154,12 @@ namespace CriticalShop.Services
             {
                 if (item.Produto != null)
                 {
-                    var volume = (item.Produto.Altura * item.Produto.Largura * item.Produto.Comprimento) / 1000000.0; // m³
+                    // Usar valores padrão se dimensões não estiverem definidas
+                    var altura = item.Produto.Altura ?? 10;
+                    var largura = item.Produto.Largura ?? 15;
+                    var comprimento = item.Produto.Comprimento ?? 20;
+                    
+                    var volume = (altura * largura * comprimento) / 1000000.0; // m³
                     volumeTotal += volume * item.Quantidade;
                 }
             }

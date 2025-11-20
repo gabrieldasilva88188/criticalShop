@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n14f3ytm16</Fingerprint>
-      <Integrity>O7342ZE+plRcC9GQtRt+scXGOzl5gnY/8PXg0xycKpY=</Integrity>
+      <Fingerprint>7c18y5prp3</Fingerprint>
+      <Integrity>OWEvVMkdg2bgoKsasG6YuUYvvXeYTSlfksU3ubNVUPc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Carrinho\style.css'))</OriginalItemSpec>
@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8tt1bsc9yn</Fingerprint>
-      <Integrity>1NfX5Y8oYiiv0+/pEft+2x3ffXhcXmYU0ZL6A1KNcM4=</Integrity>
+      <Fingerprint>vftd0g8c6j</Fingerprint>
+      <Integrity>tWmmglAbAMyU2mQHoTaN77/AvlYQP5nGzM9o5AQlNNk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\carrinho.js'))</OriginalItemSpec>

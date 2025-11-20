@@ -20,22 +20,34 @@ namespace CriticalShop.Models
         [Display(Name = "Imagem do Produto")]
         public string? Img { get; set; }
         
-        // Informações para cálculo de frete
+        [Display(Name = "Descrição Detalhada")]
+        [StringLength(5000, ErrorMessage = "A descrição não pode exceder 5000 caracteres")]
+        public string? Descricao { get; set; }
+        
+        [Display(Name = "Material")]
+        [StringLength(200, ErrorMessage = "O material não pode exceder 200 caracteres")]
+        public string? Material { get; set; }
+        
+        [Display(Name = "Quantidade/Conteúdo")]
+        [StringLength(100, ErrorMessage = "O conteúdo não pode exceder 100 caracteres")]
+        public string? Conteudo { get; set; }
+        
+        // Informações para cálculo de frete (opcionais)
         [Display(Name = "Peso (kg)")]
-        [Range(0.01, 30, ErrorMessage = "O peso deve estar entre 0.01 e 30 kg")]
-        public double Peso { get; set; } = 0.5; // Peso padrão 500g
+        [Range(0, 30, ErrorMessage = "O peso deve estar entre 0 e 30 kg")]
+        public double? Peso { get; set; }
         
         [Display(Name = "Altura (cm)")]
-        [Range(2, 105, ErrorMessage = "A altura deve estar entre 2 e 105 cm")]
-        public int Altura { get; set; } = 10; // Altura padrão 10cm
+        [Range(0, 105, ErrorMessage = "A altura deve estar entre 0 e 105 cm")]
+        public int? Altura { get; set; }
         
         [Display(Name = "Largura (cm)")]
-        [Range(11, 105, ErrorMessage = "A largura deve estar entre 11 e 105 cm")]
-        public int Largura { get; set; } = 15; // Largura padrão 15cm
+        [Range(0, 105, ErrorMessage = "A largura deve estar entre 0 e 105 cm")]
+        public int? Largura { get; set; }
         
         [Display(Name = "Comprimento (cm)")]
-        [Range(16, 105, ErrorMessage = "O comprimento deve estar entre 16 e 105 cm")]
-        public int Comprimento { get; set; } = 20; // Comprimento padrão 20cm
+        [Range(0, 105, ErrorMessage = "O comprimento deve estar entre 0 e 105 cm")]
+        public int? Comprimento { get; set; }
 
         // Relacionamentos
         [Required(ErrorMessage = "A categoria é obrigatória")]

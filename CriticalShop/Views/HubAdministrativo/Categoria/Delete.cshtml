@@ -120,11 +120,11 @@
                         </div>
 
                         <!-- Formulário de exclusão -->
-                        <form asp-action="Delete" method="post" class="mt-4">
+                        <form asp-action="ExcluirCategoria" method="post" class="mt-4">
                             <input type="hidden" asp-for="Id" />
                             
                             <div class="d-flex justify-content-between">
-                                <a asp-action="Index" class="btn btn-secondary">
+                                <a asp-action="Categorias" class="btn btn-secondary">
                                     <i class="fas fa-arrow-left"></i> Cancelar
                                 </a>
                                 <button type="submit" class="btn btn-danger" onclick="return confirm('Tem certeza absoluta que deseja excluir esta categoria? Esta ação não pode ser desfeita.')">

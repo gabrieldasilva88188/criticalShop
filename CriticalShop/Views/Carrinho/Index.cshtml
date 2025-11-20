@@ -1,14 +1,16 @@
 @model CriticalShop.Models.Carrinho
+@inject CriticalShop.Services.AuthService AuthService
 
 @{
-    ViewData["Title"] = "Meu Carrinho";
+    var usuarioNome = AuthService.GetUsuarioNome();
+    ViewData["Title"] = string.IsNullOrEmpty(usuarioNome) ? "Meu Carrinho" : $"Bem-vindo ao seu carrinho {usuarioNome}";
 }
 
 <link rel="stylesheet" href="@Url.Content("~/css/Carrinho/style.css")">
 
 <div class="cart-container">
     <div class="cart-header">
-        <h1><i class="fas fa-shopping-cart"></i> Meu Carrinho</h1>
+        <h1><i class="fas fa-shopping-cart"></i> @(string.IsNullOrEmpty(usuarioNome) ? "Meu Carrinho" : $"Bem-vindo ao seu carrinho {usuarioNome}")</h1>
         <p class="cart-subtitle">Revise seus itens antes de finalizar a compra</p>
     </div>
 
@@ -123,22 +125,52 @@
                         <span id="frete-valor">R$ 0,00</span>
                     </div>
                     
-                    <div class="summary-row total">
-                        <span><strong>Total:</strong></span>
+                    <!-- Subtotal (sem frete) -->
+                    <div class="summary-row" id="subtotal-container">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">@Model.TotalComDesconto.ToString("C")</span>
+                    </div>
+                    
+                    <!-- Total com frete -->
+                    <div class="summary-row total" id="total-com-frete-container">
+                        <span><strong>Total com frete:</strong></span>
                         <span id="total-final"><strong>@Model.TotalComDesconto.ToString("C")</strong></span>
                     </div>
                 </div>
 
                 <div class="summary-actions">
-                    <button class="btn-clear" onclick="limparCarrinho()">
-                        <i class="fas fa-trash"></i>
-                        Limpar Carrinho
-                    </button>
+                    <a asp-controller="Home" asp-action="Index" class="btn-continue-shopping">
+                        <i class="fas fa-arrow-left"></i>
+                        Continuar Comprando
+                    </a>
                     
-                    <button class="btn-checkout">
-                        <i class="fas fa-credit-card"></i>
-                        Finalizar Compra
-                    </button>
+                    <div class="action-buttons">
+                        <button type="button" class="btn-clear" onclick="limparCarrinho()">
+                            <i class="fas fa-trash"></i>
+                            Limpar Carrinho
+                        </button>
+
+                        @inject CriticalShop.Services.AuthService AuthService
+                        @{
+                            var isUsuarioLogado = AuthService.IsUsuarioLoggedIn();
+                            var isAdminLogado = AuthService.IsAdminLoggedIn();
+                        }
+
+                        @if (!isUsuarioLogado && !isAdminLogado)
+                        {
+                            <a asp-controller="Auth" asp-action="LoginUsuario" class="btn-checkout">
+                                <i class="fas fa-sign-in-alt"></i>
+                                Faça login para finalizar
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Pagamento" asp-action="Index" class="btn-checkout">
+                                <i class="fas fa-credit-card"></i>
+                                Finalizar Compra
+                            </a>
+                        }
+                    </div>
                 </div>
             </div>
         </div>

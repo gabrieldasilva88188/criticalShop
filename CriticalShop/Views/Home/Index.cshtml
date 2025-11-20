@@ -1,4 +1,5 @@
-﻿@model IEnumerable<CriticalShop.Models.Produto>
+@model IEnumerable<CriticalShop.Models.Produto>
+@inject CriticalShop.Services.AuthService AuthService
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,44 +12,7 @@
 </head>
 <body>
 
-<header class="main-header">
-    <div class="container header-top">
-    
-        <!-- Pesquisa -->
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar itens mágicos..." />
-            <button type="submit" class="search-btn">🔍</button>
-        </div>
-
-            <!-- Logo -->
-        <div class="logo">
-            <h1>Critical Shop</h1>
-            <p>Itens épicos para suas aventuras</p>
-        </div>
-
-
-        <!-- Login / Cadastro -->
-        <div class="user-actions">
-            <a href="#" class="login-btn">🛡️ Login</a>
-            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn">🎒 <span class="cart-count">0</span></a>
-        </div>
-    </div>
-
-    <!-- Menu Navegação -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#">🏠 Início</a></li>
-                <li><a href="#">📚 Livros</a></li>
-                <li><a href="#">🎲 Dados</a></li>
-                <li><a href="#">⚔️ Miniaturas</a></li>
-                <li><a href="#">🗺️ Acessórios</a></li>
-                <li><a href="#">⭐ Destaques</a></li>
-                <li><a href="#">📜 Sobre</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+@await Html.PartialAsync("~/Views/Shared/Header.cshtml")
 
 <!-- Hero -->
 <section class="hero-section" style="background: linear-gradient(rgba(35, 32, 32, 0.7), rgba(35, 32, 32, 0.7)), url('@(ViewBag.CampanhaAtiva == true ? Url.Content("~/images/desconto50Off.png") : Url.Content("~/images/hero-bg.jpg"))') no-repeat center center; background-size: cover;">
@@ -64,15 +28,51 @@
 <!-- Produtos -->
 <section class="featured-products">
     <div class="container">
-        <h2 class="section-title">Destaques</h2>
-        <div class="product-grid">
-            @foreach (var Produto in Model)
-            {
-                <partial name="_ProdutoCard" model="Produto" />
-            }
-        </div>
+        <h2 class="section-title">@(string.IsNullOrEmpty(ViewBag.CategoriaSelecionada) ? "Destaques" : ViewBag.CategoriaSelecionada)</h2>
+        
+        @if (!Model.Any())
+        {
+            <div class="nenhum-produto">
+                <p>Nenhum produto encontrado. Tente ajustar sua busca.</p>
+            </div>
+        }
+        else
+        {
+            <div class="product-grid">
+                @foreach (var produto in Model)
+                {
+                    <partial name="_ProdutoCard" model="produto" />
+                }
+            </div>
+        }
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.querySelector('input[name="searchString"]');
+        const searchForm = document.querySelector('.search-form');
+        let searchTimer;
+
+        // Busca em tempo real após 500ms sem digitação
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(() => {
+                if (this.value.length === 0 || this.value.length >= 2) {
+                    searchForm.submit();
+                }
+            }, 500);
+        });
+
+        // Forçar envio ao pressionar Enter
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                searchForm.submit();
+            }
+        });
+    });
+</script>
 
 <script src="@Url.Content("~/js/site.js")"></script>
 <script src="@Url.Content("~/js/carrinho.js")"></script>

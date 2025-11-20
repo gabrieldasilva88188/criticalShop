@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj": {}
+    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\CriticalShop\\CriticalShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj": {
+    "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\CriticalShop\\CriticalShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj",
+        "projectUniqueName": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\CriticalShop\\CriticalShop.csproj",
         "projectName": "CriticalShop",
-        "projectPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\CriticalShop.csproj",
+        "projectPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\CriticalShop\\CriticalShop.csproj",
         "packagesPath": "C:\\Users\\Nefalem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\criticalshop\\obj\\",
+        "outputPath": "C:\\Users\\Nefalem\\Desktop\\Critical Shop\\Ultima Versao\\criticalShop\\CriticalShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,12 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.8, )"

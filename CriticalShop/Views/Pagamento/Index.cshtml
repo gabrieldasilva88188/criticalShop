@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Simular Pagamento";
+}
+
+<h2>Simulação de Pagamento (Sandbox)</h2>
+<p>Você está autenticado. Aqui iremos integrar a simulação via Mercado Pago em etapas seguintes.</p>
+
+<form asp-controller="Pagamento" asp-action="SimularPagamento" method="post">
+    <button type="submit">Simular Pagamento</button>
+</form>

@@ -31,11 +31,19 @@ function inicializarCarrinho() {
 
 function adicionarAoCarrinho(produtoId, quantidade = 1) {
     const button = document.querySelector(`[data-id="${produtoId}"]`);
+    
+    if (!button) {
+        console.error('Botão não encontrado para produto ID:', produtoId);
+        return;
+    }
+    
     const originalText = button.textContent;
     
     // Feedback visual imediato
     button.textContent = 'Adicionando...';
     button.disabled = true;
+    
+    console.log('Adicionando produto ao carrinho:', produtoId);
     
     fetch('/Carrinho/Adicionar', {
         method: 'POST',
@@ -48,15 +56,19 @@ function adicionarAoCarrinho(produtoId, quantidade = 1) {
             quantidade: quantidade
         })
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Resposta recebida:', response.status);
+        return response.json();
+    })
     .then(data => {
+        console.log('Dados recebidos:', data);
         if (data.success) {
             // Feedback de sucesso
             button.textContent = 'Adicionado!';
             button.style.background = '#27ae60';
             
             // Mostrar notificação
-            mostrarNotificacao(data.message, 'success');
+            mostrarNotificacao(data.message || 'Produto adicionado ao carrinho!', 'success');
             
             // Atualizar contador do carrinho
             atualizarContadorCarrinho();
@@ -264,9 +276,9 @@ function atualizarContadorCarrinho() {
     fetch('/Carrinho/Contador')
         .then(response => response.json())
         .then(data => {
-            const cartButton = document.querySelector('.cart-btn');
-            if (cartButton) {
-                cartButton.innerHTML = `<i class="fas fa-shopping-cart"></i> Carrinho (${data.totalItens})`;
+            const cartCount = document.querySelector('.cart-count');
+            if (cartCount) {
+                cartCount.textContent = data.totalItens || 0;
             }
         })
         .catch(error => {
@@ -377,19 +389,33 @@ function selecionarFrete(servico, valor, valorFormatado, nome, prazo) {
     // Atualizar resumo do pedido
     const freteRow = document.getElementById('frete-selecionado-row');
     const freteValor = document.getElementById('frete-valor');
+    const subtotalElement = document.getElementById('subtotal');
     const totalFinal = document.getElementById('total-final');
     
+    // Mostrar linha do frete
     freteRow.style.display = 'flex';
     freteValor.textContent = valorFormatado;
     
-    // Calcular novo total
-    const subtotalText = document.getElementById('total-final').textContent;
-    const subtotal = parseFloat(subtotalText.replace(/[^\d,]/g, '').replace(',', '.'));
+    // Obter o subtotal do carrinho (sem frete)
+    let subtotal = 0;
+    if (subtotalElement) {
+        const subtotalText = subtotalElement.textContent.trim();
+        subtotal = parseFloat(subtotalText.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
+    }
+    
+    // Calcular novo total (subtotal + frete)
     const novoTotal = subtotal + valor;
     
+    // Atualizar o total com frete
     totalFinal.innerHTML = `<strong>${novoTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</strong>`;
     
+    // Armazenar o valor do frete para uso posterior
+    document.querySelector('.carrinho-container').dataset.frete = valor;
+    
     mostrarNotificacao(`Frete ${nome} selecionado!`, 'success');
+    
+    // Rolar suavemente até o resumo para mostrar o valor atualizado
+    document.querySelector('.cart-summary').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 // Máscara de CEP

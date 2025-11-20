@@ -1,22 +1,57 @@
 <header class="main-header">
-    <div class="container">
-        <div class="logo">
-            <h1><i class="fas fa-dragon"></i> RPG Commerce</h1>
-            <p>Itens mágicos para suas aventuras</p>
+    <div class="container header-top">
+
+        <!-- Pesquisa -->
+        <div class="search-bar">
+            <form asp-controller="Home" asp-action="Index" method="get" class="search-form">
+                <input type="text" name="searchString" placeholder="Buscar itens mágicos..." value="@ViewBag.SearchString" />
+                <button type="submit" class="search-btn">🔍</button>
+            </form>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fas fa-book"></i> Livros</a></li>
-                <li><a href="#"><i class="fas fa-dice-d20"></i> Dados</a></li>
-                <li><a href="#"><i class="fas fa-chess-king"></i> Miniaturas</a></li>
-                <li><a href="#"><i class="fas fa-tools"></i> Acessórios</a></li>
-            </ul>
-        </nav>
+
+        <!-- Logo -->
+        <div class="logo">
+            <h1>Critical Shop</h1>
+            <p>Itens épicos para suas aventuras</p>
+        </div>
+
+
+        <!-- Login / Cadastro -->
         <div class="user-actions">
-            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn"><i class="fas fa-shopping-cart"></i> Carrinho (0)</a>
-            <a asp-controller="Auth" asp-action="LoginUsuario" class="login-btn"><i class="fas fa-user"></i> Login Usuário</a>
-            <a asp-controller="Auth" asp-action="LoginAdmin" class="login-btn"><i class="fas fa-cog"></i> Login Admin</a>
+            @inject CriticalShop.Services.AuthService AuthService
+            @{
+                var isUsuarioLogado = AuthService.IsUsuarioLoggedIn();
+                var nomeUsuario = Context.Session.GetString("UsuarioNome") ?? "";
+            }
+
+            @if (isUsuarioLogado)
+            {
+                <div class="user-info">
+                    <span class="user-name">🧑‍🚀 @nomeUsuario</span>
+                    <a asp-controller="Auth" asp-action="Logout" class="logout-btn">🔓 Sair</a>
+                </div>
+            }
+            else
+            {
+                <a asp-controller="Auth" asp-action="LoginUsuario" class="login-btn">🛡️ Login</a>
+            }
+
+            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn">🎒 <span class="cart-count">0</span></a>
         </div>
     </div>
+
+    <!-- Menu Navegação -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a asp-action="Index" asp-route-searchString="@ViewBag.SearchString">🏠 Início</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Livros" asp-route-searchString="@ViewBag.SearchString">📚 Livros</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Dados" asp-route-searchString="@ViewBag.SearchString">🎲 Dados</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Miniaturas" asp-route-searchString="@ViewBag.SearchString">⚔️ Miniaturas</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Acessórios" asp-route-searchString="@ViewBag.SearchString">🗺️ Acessórios</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Destaques" asp-route-searchString="@ViewBag.SearchString">⭐ Destaques</a></li>
+                <li><a href="#">📜 Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>

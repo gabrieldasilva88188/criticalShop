@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CriticalShop.Models;
 using CriticalShop.Data;
+using CriticalShop.Services;
 
 namespace CriticalShop.Controllers
 {
@@ -9,16 +10,34 @@ namespace CriticalShop.Controllers
     {
         private readonly AppDbContext _context;
         private readonly ILogger<ProdutoController> _logger;
+        private readonly AuthService _authService;
 
-        public ProdutoController(AppDbContext context, ILogger<ProdutoController> logger)
+        public ProdutoController(AppDbContext context, ILogger<ProdutoController> logger, AuthService authService)
         {
             _context = context;
             _logger = logger;
+            _authService = authService;
+        }
+
+        // Verificar se admin está logado
+        private bool VerificarAcessoAdmin()
+        {
+            if (!_authService.IsAdminLoggedIn())
+            {
+                TempData["ErrorMessage"] = "Acesso negado. Faça login como administrador.";
+                return false;
+            }
+            return true;
         }
 
         // GET: Produto
         public async Task<IActionResult> Index()
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             try
             {
                 var produtos = await _context.Produtos
@@ -26,7 +45,7 @@ namespace CriticalShop.Controllers
                     .Include(p => p.Desconto)
                     .OrderBy(p => p.Nome)
                     .ToListAsync();
-                return View(produtos);
+                return View("~/Views/HubAdministrativo/Produto/Index.cshtml", produtos);
             }
             catch (Exception ex)
             {
@@ -39,6 +58,11 @@ namespace CriticalShop.Controllers
         // GET: Produto/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             if (id == null)
             {
                 return NotFound();
@@ -58,7 +82,7 @@ namespace CriticalShop.Controllers
                     return NotFound();
                 }
 
-                return View(produto);
+                return View("~/Views/HubAdministrativo/Produto/Details.cshtml", produto);
             }
             catch (Exception ex)
             {
@@ -71,6 +95,11 @@ namespace CriticalShop.Controllers
         // GET: Produto/Create
         public async Task<IActionResult> Create()
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             try
             {
                 var categorias = await _context.Categorias.OrderBy(c => c.Nome).ToListAsync();
@@ -85,7 +114,7 @@ namespace CriticalShop.Controllers
                     TempData["ErrorMessage"] = "Não há categorias cadastradas. É necessário criar categorias antes de adicionar produtos.";
                 }
 
-                return View();
+                return View("~/Views/HubAdministrativo/Produto/Create.cshtml");
             }
             catch (Exception ex)
             {
@@ -98,8 +127,13 @@ namespace CriticalShop.Controllers
         // POST: Produto/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,Preco,Img,Nota,CategoriaId,DescontoId")] Produto produto)
+        public async Task<IActionResult> Create([Bind("Nome,Preco,Img,Descricao,Material,Conteudo,Peso,Altura,Largura,Comprimento,CategoriaId,DescontoId")] Produto produto)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             try
             {
                 if (ModelState.IsValid)
@@ -141,12 +175,17 @@ namespace CriticalShop.Controllers
 
             ViewBag.Categorias = await _context.Categorias.OrderBy(c => c.Nome).ToListAsync();
             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
-            return View(produto);
+            return View("~/Views/HubAdministrativo/Produto/Create.cshtml", produto);
         }
 
         // GET: Produto/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             if (id == null)
             {
                 return NotFound();
@@ -172,7 +211,7 @@ namespace CriticalShop.Controllers
                     TempData["ErrorMessage"] = "Não há categorias cadastradas. É necessário criar categorias antes de editar produtos.";
                 }
 
-                return View(produto);
+                return View("~/Views/HubAdministrativo/Produto/Edit.cshtml", produto);
             }
             catch (Exception ex)
             {
@@ -185,8 +224,13 @@ namespace CriticalShop.Controllers
         // POST: Produto/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Preco,Img,Nota,CategoriaId,DescontoId")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Preco,Img,Descricao,Material,Conteudo,Peso,Altura,Largura,Comprimento,CategoriaId,DescontoId")] Produto produto)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             if (id != produto.Id)
             {
                 return NotFound();
@@ -244,12 +288,17 @@ namespace CriticalShop.Controllers
 
             ViewBag.Categorias = await _context.Categorias.OrderBy(c => c.Nome).ToListAsync();
             ViewBag.Descontos = await _context.Descontos.OrderBy(d => d.Valor).ToListAsync();
-            return View(produto);
+            return View("~/Views/HubAdministrativo/Produto/Edit.cshtml", produto);
         }
 
         // GET: Produto/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             if (id == null)
             {
                 return NotFound();
@@ -269,7 +318,7 @@ namespace CriticalShop.Controllers
                     return NotFound();
                 }
 
-                return View(produto);
+                return View("~/Views/HubAdministrativo/Produto/Delete.cshtml", produto);
             }
             catch (Exception ex)
             {
@@ -284,6 +333,11 @@ namespace CriticalShop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (!VerificarAcessoAdmin())
+            {
+                return RedirectToAction("LoginAdmin", "Auth");
+            }
+
             try
             {
                 var produto = await _context.Produtos

@@ -47,6 +47,7 @@ namespace CriticalShop.Controllers
 
         // POST: Carrinho/Adicionar
         [HttpPost]
+        [IgnoreAntiforgeryToken]
         public async Task<IActionResult> Adicionar([FromBody] AddToCartRequest request)
         {
             try
@@ -128,13 +129,16 @@ namespace CriticalShop.Controllers
                 }
 
                 item.Quantidade = request.NovaQuantidade;
-                item.Carrinho.DataAtualizacao = DateTime.Now;
+                if (item.Carrinho != null)
+                {
+                    item.Carrinho.DataAtualizacao = DateTime.Now;
+                }
 
                 await _context.SaveChangesAsync();
 
                 var subtotal = item.Subtotal;
-                var totalCarrinho = item.Carrinho.TotalComDesconto;
-                var totalItens = item.Carrinho.TotalItens;
+                var totalCarrinho = item.Carrinho?.TotalComDesconto ?? 0;
+                var totalItens = item.Carrinho?.TotalItens ?? 0;
 
                 return Json(new 
                 { 
