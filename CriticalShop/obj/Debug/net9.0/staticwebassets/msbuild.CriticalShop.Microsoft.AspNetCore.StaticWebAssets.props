@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7c18y5prp3</Fingerprint>
-      <Integrity>OWEvVMkdg2bgoKsasG6YuUYvvXeYTSlfksU3ubNVUPc=</Integrity>
+      <Fingerprint>98lkdrbkc8</Fingerprint>
+      <Integrity>hy52YcF5icnwHwgePgQcL7UefNgWM9E5ARMdopLLeAk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Carrinho\style.css'))</OriginalItemSpec>
