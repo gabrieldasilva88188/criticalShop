@@ -427,3 +427,23 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #E56712 0%, #CC5B10 100%);
 }
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #565e64 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #565e64 0%, #444a50 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    color: #FFFFFF;
+}

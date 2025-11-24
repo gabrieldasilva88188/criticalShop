@@ -19,10 +19,11 @@ body {
     background: linear-gradient(135deg, #232020 0%, #3A3535 100%);
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* ← ALTERAR AQUI */
     justify-content: center;
     padding: 20px;
 }
+
 
 .container {
     width: 100%;

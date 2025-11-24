@@ -1,11 +1,12 @@
 <header class="main-header">
     <div class="container header-top">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
         <!-- Pesquisa -->
         <div class="search-bar">
             <form asp-controller="Home" asp-action="Index" method="get" class="search-form">
                 <input type="text" name="searchString" placeholder="Buscar itens mágicos..." value="@ViewBag.SearchString" />
-                <button type="submit" class="search-btn">🔍</button>
+                <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
@@ -26,17 +27,17 @@
 
             @if (isUsuarioLogado)
             {
-                <div class="user-info">
-                    <span class="user-name">🧑‍🚀 @nomeUsuario</span>
-                    <a asp-controller="Auth" asp-action="Logout" class="logout-btn">🔓 Sair</a>
+                <div class="user-info" style="color: #fff;">
+                    <span class="user-name"><i class="fa-solid fa-user"></i> @nomeUsuario</span>
+                    <a asp-controller="Auth" asp-action="Logout" class="logout-btn"><i class="fa-solid fa-lock"></i> Sair</a>
                 </div>
             }
             else
             {
-                <a asp-controller="Auth" asp-action="LoginUsuario" class="login-btn">🛡️ Login</a>
+                <a asp-controller="Auth" asp-action="LoginUsuario" class="login-btn"><i class="fa-solid fa-shield"></i> Login</a>
             }
 
-            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn">🎒 <span class="cart-count">0</span></a>
+            <a asp-controller="Carrinho" asp-action="Index" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span class="cart-count">0</span></a>
         </div>
     </div>
 
@@ -44,13 +45,13 @@
     <nav class="main-nav">
         <div class="nav-container">
             <ul class="nav-menu">
-                <li><a asp-action="Index" asp-route-searchString="@ViewBag.SearchString">🏠 Início</a></li>
-                <li><a asp-action="Index" asp-route-categoria="Livros" asp-route-searchString="@ViewBag.SearchString">📚 Livros</a></li>
-                <li><a asp-action="Index" asp-route-categoria="Dados" asp-route-searchString="@ViewBag.SearchString">🎲 Dados</a></li>
-                <li><a asp-action="Index" asp-route-categoria="Miniaturas" asp-route-searchString="@ViewBag.SearchString">⚔️ Miniaturas</a></li>
-                <li><a asp-action="Index" asp-route-categoria="Acessórios" asp-route-searchString="@ViewBag.SearchString">🗺️ Acessórios</a></li>
-                <li><a asp-action="Index" asp-route-categoria="Destaques" asp-route-searchString="@ViewBag.SearchString">⭐ Destaques</a></li>
-                <li><a href="#">📜 Sobre</a></li>
+                <li><a asp-action="Index" asp-route-searchString="@ViewBag.SearchString"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Livros" asp-route-searchString="@ViewBag.SearchString"><i class="fa-solid fa-book"></i> Livros</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Dados" asp-route-searchString="@ViewBag.SearchString"><i class="fa-solid fa-dice-d20"></i> Dados</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Miniaturas" asp-route-searchString="@ViewBag.SearchString"><i class="fa-solid fa-chess"></i> Miniaturas</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Acessórios" asp-route-searchString="@ViewBag.SearchString"><i class="fa-regular fa-map"></i> Acessórios</a></li>
+                <li><a asp-action="Index" asp-route-categoria="Destaques" asp-route-searchString="@ViewBag.SearchString"><i class="fa-solid fa-star"></i> Destaques</a></li>
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i> Sobre</a></li>
             </ul>
         </div>
     </nav>
